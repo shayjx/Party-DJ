@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE05CBE71FC914330028FF9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBE61FC914330028FF9C /* AppDelegate.swift */; };
+		FE05CBE91FC914330028FF9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBE81FC914330028FF9C /* ViewController.swift */; };
+		FE05CBEC1FC914330028FF9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBEA1FC914330028FF9C /* Main.storyboard */; };
+		FE05CBEE1FC914330028FF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBED1FC914330028FF9C /* Assets.xcassets */; };
+		FE05CBF11FC914330028FF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */; };
+		FE05CBFC1FC914330028FF9C /* Party_DJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBFB1FC914330028FF9C /* Party_DJTests.swift */; };
+		FE05CC071FC914330028FF9C /* Party_DJUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CC061FC914330028FF9C /* Party_DJUITests.swift */; };
+		FE05CC4B1FC917BD0028FF9C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC3E1FC917960028FF9C /* Alamofire.framework */; };
+		FE05CC4C1FC917BD0028FF9C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC3E1FC917960028FF9C /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE05CC511FC91AFF0028FF9C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */; };
+		FE05CC531FC9218D0028FF9C /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CC521FC9218D0028FF9C /* GIF.swift */; };
+		FE05CC551FC922280028FF9C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CC541FC922280028FF9C /* APIManager.swift */; };
+		FE05CC691FC925590028FF9C /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC661FC925590028FF9C /* SpotifyMetadata.framework */; };
+		FE05CC6A1FC925590028FF9C /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC671FC925590028FF9C /* SpotifyAuthentication.framework */; };
+		FE05CC6B1FC925590028FF9C /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC681FC925590028FF9C /* SpotifyAudioPlayback.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE05CBF81FC914330028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CBDB1FC914330028FF9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE05CBE21FC914330028FF9C;
+			remoteInfo = "Party-DJ";
+		};
+		FE05CC031FC914330028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CBDB1FC914330028FF9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE05CBE21FC914330028FF9C;
+			remoteInfo = "Party-DJ";
+		};
+		FE05CC3D1FC917960028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		FE05CC3F1FC917960028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		FE05CC411FC917960028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		FE05CC431FC917960028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		FE05CC451FC917960028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		FE05CC471FC917960028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		FE05CC491FC917960028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		FE05CC4D1FC917BD0028FF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE05CC4F1FC917BE0028FF9C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FE05CC4C1FC917BD0028FF9C /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FE05CBE31FC914330028FF9C /* Party-DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party-DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE05CBE61FC914330028FF9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE05CBE81FC914330028FF9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE05CBEB1FC914330028FF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE05CBED1FC914330028FF9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE05CBF01FC914330028FF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE05CBF21FC914330028FF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE05CBF71FC914330028FF9C /* Party-DJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Party-DJTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE05CBFB1FC914330028FF9C /* Party_DJTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party_DJTests.swift; sourceTree = "<group>"; };
+		FE05CBFD1FC914330028FF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE05CC021FC914330028FF9C /* Party-DJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Party-DJUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE05CC061FC914330028FF9C /* Party_DJUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party_DJUITests.swift; sourceTree = "<group>"; };
+		FE05CC081FC914330028FF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE05CC151FC914C00028FF9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE05CC161FC914C70028FF9C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FE05CC171FC914F40028FF9C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FE05CC181FC915020028FF9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FE05CC521FC9218D0028FF9C /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
+		FE05CC541FC922280028FF9C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FE05CC661FC925590028FF9C /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "../../Downloads/ios-sdk-master 3/SpotifyMetadata.framework"; sourceTree = "<group>"; };
+		FE05CC671FC925590028FF9C /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "../../Downloads/ios-sdk-master 3/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
+		FE05CC681FC925590028FF9C /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		FE05CC6C1FC927DD0028FF9C /* Party-DJ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Party-DJ-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE05CBE01FC914330028FF9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE05CC691FC925590028FF9C /* SpotifyMetadata.framework in Frameworks */,
+				FE05CC6B1FC925590028FF9C /* SpotifyAudioPlayback.framework in Frameworks */,
+				FE05CC6A1FC925590028FF9C /* SpotifyAuthentication.framework in Frameworks */,
+				FE05CC4B1FC917BD0028FF9C /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE05CBF41FC914330028FF9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE05CBFF1FC914330028FF9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE05CBDA1FC914330028FF9C = {
+			isa = PBXGroup;
+			children = (
+				FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */,
+				FE05CBE51FC914330028FF9C /* Party-DJ */,
+				FE05CBFA1FC914330028FF9C /* Party-DJTests */,
+				FE05CC051FC914330028FF9C /* Party-DJUITests */,
+				FE05CBE41FC914330028FF9C /* Products */,
+				FE05CC141FC914BF0028FF9C /* Frameworks */,
+				FE05CC6C1FC927DD0028FF9C /* Party-DJ-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		FE05CBE41FC914330028FF9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE05CBE31FC914330028FF9C /* Party-DJ.app */,
+				FE05CBF71FC914330028FF9C /* Party-DJTests.xctest */,
+				FE05CC021FC914330028FF9C /* Party-DJUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE05CBE51FC914330028FF9C /* Party-DJ */ = {
+			isa = PBXGroup;
+			children = (
+				FE05CBE61FC914330028FF9C /* AppDelegate.swift */,
+				FE05CBE81FC914330028FF9C /* ViewController.swift */,
+				FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */,
+				FE05CC521FC9218D0028FF9C /* GIF.swift */,
+				FE05CC541FC922280028FF9C /* APIManager.swift */,
+				FE05CBEA1FC914330028FF9C /* Main.storyboard */,
+				FE05CBED1FC914330028FF9C /* Assets.xcassets */,
+				FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */,
+				FE05CBF21FC914330028FF9C /* Info.plist */,
+			);
+			path = "Party-DJ";
+			sourceTree = "<group>";
+		};
+		FE05CBFA1FC914330028FF9C /* Party-DJTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE05CBFB1FC914330028FF9C /* Party_DJTests.swift */,
+				FE05CBFD1FC914330028FF9C /* Info.plist */,
+			);
+			path = "Party-DJTests";
+			sourceTree = "<group>";
+		};
+		FE05CC051FC914330028FF9C /* Party-DJUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE05CC061FC914330028FF9C /* Party_DJUITests.swift */,
+				FE05CC081FC914330028FF9C /* Info.plist */,
+			);
+			path = "Party-DJUITests";
+			sourceTree = "<group>";
+		};
+		FE05CC141FC914BF0028FF9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE05CC681FC925590028FF9C /* SpotifyAudioPlayback.framework */,
+				FE05CC671FC925590028FF9C /* SpotifyAuthentication.framework */,
+				FE05CC661FC925590028FF9C /* SpotifyMetadata.framework */,
+				FE05CC181FC915020028FF9C /* CoreGraphics.framework */,
+				FE05CC171FC914F40028FF9C /* AudioToolbox.framework */,
+				FE05CC161FC914C70028FF9C /* AVFoundation.framework */,
+				FE05CC151FC914C00028FF9C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE05CC331FC917950028FF9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE05CC3E1FC917960028FF9C /* Alamofire.framework */,
+				FE05CC401FC917960028FF9C /* Alamofire iOS Tests.xctest */,
+				FE05CC421FC917960028FF9C /* Alamofire.framework */,
+				FE05CC441FC917960028FF9C /* Alamofire macOS Tests.xctest */,
+				FE05CC461FC917960028FF9C /* Alamofire.framework */,
+				FE05CC481FC917960028FF9C /* Alamofire tvOS Tests.xctest */,
+				FE05CC4A1FC917960028FF9C /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE05CBE21FC914330028FF9C /* Party-DJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE05CC0B1FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJ" */;
+			buildPhases = (
+				FE05CBDF1FC914330028FF9C /* Sources */,
+				FE05CBE01FC914330028FF9C /* Frameworks */,
+				FE05CBE11FC914330028FF9C /* Resources */,
+				FE05CC4F1FC917BE0028FF9C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE05CC4E1FC917BD0028FF9C /* PBXTargetDependency */,
+			);
+			name = "Party-DJ";
+			productName = "Party-DJ";
+			productReference = FE05CBE31FC914330028FF9C /* Party-DJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE05CBF61FC914330028FF9C /* Party-DJTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE05CC0E1FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJTests" */;
+			buildPhases = (
+				FE05CBF31FC914330028FF9C /* Sources */,
+				FE05CBF41FC914330028FF9C /* Frameworks */,
+				FE05CBF51FC914330028FF9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE05CBF91FC914330028FF9C /* PBXTargetDependency */,
+			);
+			name = "Party-DJTests";
+			productName = "Party-DJTests";
+			productReference = FE05CBF71FC914330028FF9C /* Party-DJTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE05CC011FC914330028FF9C /* Party-DJUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE05CC111FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJUITests" */;
+			buildPhases = (
+				FE05CBFE1FC914330028FF9C /* Sources */,
+				FE05CBFF1FC914330028FF9C /* Frameworks */,
+				FE05CC001FC914330028FF9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE05CC041FC914330028FF9C /* PBXTargetDependency */,
+			);
+			name = "Party-DJUITests";
+			productName = "Party-DJUITests";
+			productReference = FE05CC021FC914330028FF9C /* Party-DJUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE05CBDB1FC914330028FF9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Shana Joseph";
+				TargetAttributes = {
+					FE05CBE21FC914330028FF9C = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					FE05CBF61FC914330028FF9C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE05CBE21FC914330028FF9C;
+					};
+					FE05CC011FC914330028FF9C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE05CBE21FC914330028FF9C;
+					};
+				};
+			};
+			buildConfigurationList = FE05CBDE1FC914330028FF9C /* Build configuration list for PBXProject "Party-DJ" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE05CBDA1FC914330028FF9C;
+			productRefGroup = FE05CBE41FC914330028FF9C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FE05CC331FC917950028FF9C /* Products */;
+					ProjectRef = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FE05CBE21FC914330028FF9C /* Party-DJ */,
+				FE05CBF61FC914330028FF9C /* Party-DJTests */,
+				FE05CC011FC914330028FF9C /* Party-DJUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FE05CC3E1FC917960028FF9C /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FE05CC3D1FC917960028FF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE05CC401FC917960028FF9C /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = FE05CC3F1FC917960028FF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE05CC421FC917960028FF9C /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FE05CC411FC917960028FF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE05CC441FC917960028FF9C /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = FE05CC431FC917960028FF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE05CC461FC917960028FF9C /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FE05CC451FC917960028FF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE05CC481FC917960028FF9C /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = FE05CC471FC917960028FF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE05CC4A1FC917960028FF9C /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FE05CC491FC917960028FF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE05CBE11FC914330028FF9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE05CBF11FC914330028FF9C /* LaunchScreen.storyboard in Resources */,
+				FE05CBEE1FC914330028FF9C /* Assets.xcassets in Resources */,
+				FE05CBEC1FC914330028FF9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE05CBF51FC914330028FF9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE05CC001FC914330028FF9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE05CBDF1FC914330028FF9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE05CC511FC91AFF0028FF9C /* LoginViewController.swift in Sources */,
+				FE05CBE91FC914330028FF9C /* ViewController.swift in Sources */,
+				FE05CC551FC922280028FF9C /* APIManager.swift in Sources */,
+				FE05CC531FC9218D0028FF9C /* GIF.swift in Sources */,
+				FE05CBE71FC914330028FF9C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE05CBF31FC914330028FF9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE05CBFC1FC914330028FF9C /* Party_DJTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE05CBFE1FC914330028FF9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE05CC071FC914330028FF9C /* Party_DJUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE05CBF91FC914330028FF9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE05CBE21FC914330028FF9C /* Party-DJ */;
+			targetProxy = FE05CBF81FC914330028FF9C /* PBXContainerItemProxy */;
+		};
+		FE05CC041FC914330028FF9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE05CBE21FC914330028FF9C /* Party-DJ */;
+			targetProxy = FE05CC031FC914330028FF9C /* PBXContainerItemProxy */;
+		};
+		FE05CC4E1FC917BD0028FF9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = FE05CC4D1FC917BD0028FF9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE05CBEA1FC914330028FF9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE05CBEB1FC914330028FF9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE05CBF01FC914330028FF9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE05CC091FC914330028FF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE05CC0A1FC914330028FF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE05CC0C1FC914330028FF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68PDGMVX63;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Party-DJ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "ShanaJ.Party-DJ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Party-DJ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE05CC0D1FC914330028FF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68PDGMVX63;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Party-DJ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "ShanaJ.Party-DJ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Party-DJ-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE05CC0F1FC914330028FF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68PDGMVX63;
+				INFOPLIST_FILE = "Party-DJTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ShanaJ.Party-DJTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Party-DJ.app/Party-DJ";
+			};
+			name = Debug;
+		};
+		FE05CC101FC914330028FF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68PDGMVX63;
+				INFOPLIST_FILE = "Party-DJTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ShanaJ.Party-DJTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Party-DJ.app/Party-DJ";
+			};
+			name = Release;
+		};
+		FE05CC121FC914330028FF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68PDGMVX63;
+				INFOPLIST_FILE = "Party-DJUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ShanaJ.Party-DJUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Party-DJ";
+			};
+			name = Debug;
+		};
+		FE05CC131FC914330028FF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68PDGMVX63;
+				INFOPLIST_FILE = "Party-DJUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ShanaJ.Party-DJUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Party-DJ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE05CBDE1FC914330028FF9C /* Build configuration list for PBXProject "Party-DJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE05CC091FC914330028FF9C /* Debug */,
+				FE05CC0A1FC914330028FF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE05CC0B1FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE05CC0C1FC914330028FF9C /* Debug */,
+				FE05CC0D1FC914330028FF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE05CC0E1FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE05CC0F1FC914330028FF9C /* Debug */,
+				FE05CC101FC914330028FF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE05CC111FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE05CC121FC914330028FF9C /* Debug */,
+				FE05CC131FC914330028FF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE05CBDB1FC914330028FF9C /* Project object */;
+}

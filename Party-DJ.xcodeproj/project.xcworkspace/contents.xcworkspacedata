@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../../Downloads/ios-sdk-master 3/SpotifyAudioPlayback.framework">
+   </FileRef>
+   <FileRef
+      location = "group:../../../Downloads/ios-sdk-master 3/SpotifyAuthentication.framework">
+   </FileRef>
+   <FileRef
+      location = "group:../../../Downloads/ios-sdk-master 3/SpotifyMetadata.framework">
+   </FileRef>
+   <FileRef
+      location = "self:Party-DJ.xcodeproj">
+   </FileRef>
+</Workspace>
