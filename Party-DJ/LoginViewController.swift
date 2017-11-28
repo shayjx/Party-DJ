@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var joinButton:  UIButton!
     @IBOutlet weak var gifBackgroundImage: UIImageView!
     
     let manager = APIManager()
@@ -19,8 +20,16 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        gifBackgroundImage.loadGif(name: "party")
+        gifBackgroundImage.loadGif(name: "concert2")
         welcomeLabel.text = "Where everyone can be the DJ."
+        
+        // Set up Login Button
+        loginButton.layer.cornerRadius = loginButton.frame.width * 0.10
+        loginButton.layer.masksToBounds = true
+        
+        // Set up Join Button
+         joinButton.layer.cornerRadius = joinButton.frame.width * 0.10
+         joinButton.layer.masksToBounds = true
         
           APIManager.current = manager
         
@@ -37,6 +46,10 @@ class LoginViewController: UIViewController {
                 NotificationCenter.default.addObserver(self, selector: #selector(readyforSegue), name: Notification.Name("loginSuccessful"), object: nil)
             }
         }
+    }
+    
+    @IBAction func didTapJoin(_ sender: Any) {
+        performSegue(withIdentifier: "joinSegue", sender: self)
     }
     
     @objc func readyforSegue() {

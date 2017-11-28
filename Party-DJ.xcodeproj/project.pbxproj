@@ -7,21 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F50D872B10F691BD53E7FC /* Pods_Party_DJTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEE18F3E24D4F97FCDDBBD8 /* Pods_Party_DJTests.framework */; };
+		7A545CE8D68A459AE3BBE4D6 /* Pods_Party_DJUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B39170085FB9B56D350175 /* Pods_Party_DJUITests.framework */; };
+		98660EF277029DEB4D06CDA2 /* Pods_Party_DJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34A303F4A23E14A8BB249F /* Pods_Party_DJ.framework */; };
 		FE05CBE71FC914330028FF9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBE61FC914330028FF9C /* AppDelegate.swift */; };
 		FE05CBE91FC914330028FF9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBE81FC914330028FF9C /* ViewController.swift */; };
-		FE05CBEC1FC914330028FF9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBEA1FC914330028FF9C /* Main.storyboard */; };
+		FE05CBEC1FC914330028FF9C /* Main_1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBEA1FC914330028FF9C /* Main_1.storyboard */; };
 		FE05CBEE1FC914330028FF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBED1FC914330028FF9C /* Assets.xcassets */; };
 		FE05CBF11FC914330028FF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */; };
 		FE05CBFC1FC914330028FF9C /* Party_DJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBFB1FC914330028FF9C /* Party_DJTests.swift */; };
 		FE05CC071FC914330028FF9C /* Party_DJUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CC061FC914330028FF9C /* Party_DJUITests.swift */; };
-		FE05CC4B1FC917BD0028FF9C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC3E1FC917960028FF9C /* Alamofire.framework */; };
-		FE05CC4C1FC917BD0028FF9C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC3E1FC917960028FF9C /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE05CC511FC91AFF0028FF9C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */; };
 		FE05CC531FC9218D0028FF9C /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CC521FC9218D0028FF9C /* GIF.swift */; };
 		FE05CC551FC922280028FF9C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CC541FC922280028FF9C /* APIManager.swift */; };
 		FE05CC691FC925590028FF9C /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC661FC925590028FF9C /* SpotifyMetadata.framework */; };
 		FE05CC6A1FC925590028FF9C /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC671FC925590028FF9C /* SpotifyAuthentication.framework */; };
 		FE05CC6B1FC925590028FF9C /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC681FC925590028FF9C /* SpotifyAudioPlayback.framework */; };
+		FE05CC701FCA599D0028FF9C /* concert.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC6F1FCA599C0028FF9C /* concert.gif */; };
+		FE05CC721FCA5C950028FF9C /* tenor.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC711FCA5C940028FF9C /* tenor.gif */; };
+		FE05CC7B1FCA615C0028FF9C /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC751FCA615B0028FF9C /* giphy.gif */; };
+		FE05CC7C1FCA615C0028FF9C /* tenor (1).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC761FCA615B0028FF9C /* tenor (1).gif */; };
+		FE05CC7D1FCA615C0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC771FCA615B0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif */; };
+		FE05CC7E1FCA615C0028FF9C /* giphy (1).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC781FCA615C0028FF9C /* giphy (1).gif */; };
+		FE05CC7F1FCA615C0028FF9C /* giphy (2).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC791FCA615C0028FF9C /* giphy (2).gif */; };
+		FE05CC801FCA615C0028FF9C /* giphy (3).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */; };
+		FE05CC821FCA62D30028FF9C /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC811FCA62D20028FF9C /* download.jpeg */; };
+		FE05CC841FCA66C50028FF9C /* concert2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC831FCA66C50028FF9C /* concert2.gif */; };
+		FE65A78E1FCB8618002B9ACE /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A78D1FCB8618002B9ACE /* Queue.swift */; };
+		FE65A79A1FCB863E002B9ACE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7991FCB863E002B9ACE /* Track.swift */; };
+		FE65A79C1FCB8677002B9ACE /* Quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A79B1FCB8677002B9ACE /* Quicksort.swift */; };
+		FE65A79D1FCB8BC3002B9ACE /* Pods_Party_DJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEDE3AC1FCB7D2600679B2E /* Pods_Party_DJ.framework */; };
+		FE65A79E1FCB8BC3002B9ACE /* Pods_Party_DJ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FEEDE3AC1FCB7D2600679B2E /* Pods_Party_DJ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE65A7A41FCB9C5E002B9ACE /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7A31FCB9C5E002B9ACE /* welcomeViewController.swift */; };
+		FE65A7AD1FCB9C9D002B9ACE /* createHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7AC1FCB9C9D002B9ACE /* createHomeViewController.swift */; };
+		FE65A7B11FCB9D87002B9ACE /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7B01FCB9D87002B9ACE /* TrackCell.swift */; };
+		FE65A7C01FCB9DCD002B9ACE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7BF1FCB9DCD002B9ACE /* Album.swift */; };
+		FE65A7C21FCB9E0B002B9ACE /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7C11FCB9E0B002B9ACE /* AlbumViewController.swift */; };
+		FE65A7C41FCB9E4E002B9ACE /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7C31FCB9E4E002B9ACE /* ArtistViewController.swift */; };
+		FE65A7C61FCB9E78002B9ACE /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7C51FCB9E78002B9ACE /* Artist.swift */; };
+		FE65A7CE1FCB9F13002B9ACE /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7C71FCB9F11002B9ACE /* AlbumCell.swift */; };
+		FE65A7CF1FCB9F13002B9ACE /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7C81FCB9F11002B9ACE /* UserCell.swift */; };
+		FE65A7D01FCB9F13002B9ACE /* ShareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7C91FCB9F11002B9ACE /* ShareCell.swift */; };
+		FE65A7D11FCB9F13002B9ACE /* AlbumResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7CA1FCB9F12002B9ACE /* AlbumResultCell.swift */; };
+		FE65A7D21FCB9F13002B9ACE /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7CB1FCB9F12002B9ACE /* SearchResultCell.swift */; };
+		FE65A7D31FCB9F13002B9ACE /* InviteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7CC1FCB9F12002B9ACE /* InviteCell.swift */; };
+		FE65A7D41FCB9F13002B9ACE /* ArtistResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7CD1FCB9F13002B9ACE /* ArtistResultCell.swift */; };
+		FE65A7D81FCBA36E002B9ACE /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7D71FCBA36E002B9ACE /* CreateViewController.swift */; };
+		FE65A7DA1FCBA439002B9ACE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7D91FCBA439002B9ACE /* SearchViewController.swift */; };
+		FE65A7DC1FCBBDF1002B9ACE /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE65A7DB1FCBBDF0002B9ACE /* background.jpg */; };
+		FE65A7DE1FCBCA34002B9ACE /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = FE65A7DD1FCBCA34002B9ACE /* person.png */; };
+		FE65A7E01FCBCC14002B9ACE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FE65A7DF1FCBCC13002B9ACE /* icon.png */; };
+		FE65A7E21FCBCD93002B9ACE /* icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = FE65A7E11FCBCD91002B9ACE /* icon copy.png */; };
+		FEEDE2201FCA6B6A00679B2E /* e724ce6c-3a6f-42f4-9cd2-685d36643e32.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEDE2181FCA6B6A00679B2E /* e724ce6c-3a6f-42f4-9cd2-685d36643e32.png */; };
+		FEEDE2611FCA8AE100679B2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDE2601FCA8AE100679B2E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,72 +77,93 @@
 			remoteGlobalIDString = FE05CBE21FC914330028FF9C;
 			remoteInfo = "Party-DJ";
 		};
-		FE05CC3D1FC917960028FF9C /* PBXContainerItemProxy */ = {
+		FE65A7971FCB8619002B9ACE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
+			remoteGlobalIDString = 5E01CB62B12BF3373E811423CE386557;
+			remoteInfo = SkyFloatingLabelTextField;
 		};
-		FE05CC3F1FC917960028FF9C /* PBXContainerItemProxy */ = {
+		FE65A79F1FCB8BC3002B9ACE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS Tests";
-		};
-		FE05CC411FC917960028FF9C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
-			remoteInfo = "Alamofire macOS";
-		};
-		FE05CC431FC917960028FF9C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
-			remoteInfo = "Alamofire macOS Tests";
-		};
-		FE05CC451FC917960028FF9C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS";
-		};
-		FE05CC471FC917960028FF9C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS Tests";
-		};
-		FE05CC491FC917960028FF9C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4202FE01B667AA100C997FB;
-			remoteInfo = "Alamofire watchOS";
-		};
-		FE05CC4D1FC917BD0028FF9C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
+			remoteGlobalIDString = 977EE5A11FB79B8AC096CF19453C7B5E;
+			remoteInfo = "Pods-Party-DJ";
+		};
+		FE65A7BB1FCB9D88002B9ACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2F767F91B634CE5711DE3E883239212;
+			remoteInfo = MarqueeLabel;
+		};
+		FE65A7BD1FCB9D88002B9ACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 48C8A1B25850670F2F4E167B81660B40;
+			remoteInfo = SwipeCellKit;
+		};
+		FEEDE3A31FCB7D2600679B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AF6617123A8B89FAD4DF0E66261F6ADB;
+			remoteInfo = Alamofire;
+		};
+		FEEDE3A51FCB7D2600679B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5013A28DCBC0A458994A3BD338ECC3D1;
+			remoteInfo = AlamofireImage;
+		};
+		FEEDE3A71FCB7D2600679B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E56B776F6E4254E71E1F6426E5D89A9D;
+			remoteInfo = Bolts;
+		};
+		FEEDE3A91FCB7D2600679B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08B0D1E4735F20CB311C31339535461B;
+			remoteInfo = Parse;
+		};
+		FEEDE3AB1FCB7D2600679B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6EF5C0655EB1B013D2CF52521B274522;
+			remoteInfo = "Pods-Party-DJ";
+		};
+		FEEDE3AD1FCB7D2600679B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D74561459D604D1A650C51B5ADAA0AD;
+			remoteInfo = "Pods-Party-DJTests";
+		};
+		FEEDE3AF1FCB7D2600679B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 61DEB638DAF5844987DB9E301826879E;
+			remoteInfo = "Pods-Party-DJUITests";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FE05CC4F1FC917BE0028FF9C /* Embed Frameworks */ = {
+		FEEDE32B1FCB781100679B2E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FE05CC4C1FC917BD0028FF9C /* Alamofire.framework in Embed Frameworks */,
+				FE65A79E1FCB8BC3002B9ACE /* Pods_Party_DJ.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,10 +171,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00E3FE6E6EE9205B82697641 /* Pods-Party-DJUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party-DJUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party-DJUITests/Pods-Party-DJUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3522E2FF45FA7D168F7E7C04 /* Pods-Party-DJUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party-DJUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party-DJUITests/Pods-Party-DJUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		444C68B9010AD158BBB0A760 /* Pods-Party-DJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party-DJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party-DJ/Pods-Party-DJ.release.xcconfig"; sourceTree = "<group>"; };
+		879EC300E8B5C5AEC02560C8 /* Pods-Party-DJTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party-DJTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party-DJTests/Pods-Party-DJTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9EF95C656A85E74F9FA31C8 /* Pods-Party-DJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party-DJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party-DJ/Pods-Party-DJ.debug.xcconfig"; sourceTree = "<group>"; };
+		AB6FA75B47FEDE3373FFB52D /* Pods-Party-DJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party-DJTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party-DJTests/Pods-Party-DJTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF34A303F4A23E14A8BB249F /* Pods_Party_DJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_DJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B39170085FB9B56D350175 /* Pods_Party_DJUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_DJUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEE18F3E24D4F97FCDDBBD8 /* Pods_Party_DJTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_DJTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE05CBE31FC914330028FF9C /* Party-DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party-DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE05CBE61FC914330028FF9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE05CBE81FC914330028FF9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE05CBEB1FC914330028FF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE05CBEB1FC914330028FF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_1.storyboard; sourceTree = "<group>"; };
 		FE05CBED1FC914330028FF9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE05CBF01FC914330028FF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE05CBF21FC914330028FF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,7 +197,6 @@
 		FE05CC161FC914C70028FF9C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FE05CC171FC914F40028FF9C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FE05CC181FC915020028FF9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FE05CC521FC9218D0028FF9C /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
 		FE05CC541FC922280028FF9C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -137,6 +204,42 @@
 		FE05CC671FC925590028FF9C /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "../../Downloads/ios-sdk-master 3/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
 		FE05CC681FC925590028FF9C /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		FE05CC6C1FC927DD0028FF9C /* Party-DJ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Party-DJ-Bridging-Header.h"; sourceTree = "<group>"; };
+		FE05CC6F1FCA599C0028FF9C /* concert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = concert.gif; sourceTree = "<group>"; };
+		FE05CC711FCA5C940028FF9C /* tenor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tenor.gif; sourceTree = "<group>"; };
+		FE05CC751FCA615B0028FF9C /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		FE05CC761FCA615B0028FF9C /* tenor (1).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tenor (1).gif"; sourceTree = "<group>"; };
+		FE05CC771FCA615B0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tumblr_odmnhdGDqI1vf5mrco1_250.gif; sourceTree = "<group>"; };
+		FE05CC781FCA615C0028FF9C /* giphy (1).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy (1).gif"; sourceTree = "<group>"; };
+		FE05CC791FCA615C0028FF9C /* giphy (2).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy (2).gif"; sourceTree = "<group>"; };
+		FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy (3).gif"; sourceTree = "<group>"; };
+		FE05CC811FCA62D20028FF9C /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		FE05CC831FCA66C50028FF9C /* concert2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = concert2.gif; path = ../../Documents/concert2.gif; sourceTree = "<group>"; };
+		FE65A78D1FCB8618002B9ACE /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		FE65A7991FCB863E002B9ACE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		FE65A79B1FCB8677002B9ACE /* Quicksort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quicksort.swift; sourceTree = "<group>"; };
+		FE65A7A31FCB9C5E002B9ACE /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
+		FE65A7AC1FCB9C9D002B9ACE /* createHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createHomeViewController.swift; sourceTree = "<group>"; };
+		FE65A7B01FCB9D87002B9ACE /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		FE65A7BF1FCB9DCD002B9ACE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		FE65A7C11FCB9E0B002B9ACE /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		FE65A7C31FCB9E4E002B9ACE /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		FE65A7C51FCB9E78002B9ACE /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		FE65A7C71FCB9F11002B9ACE /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		FE65A7C81FCB9F11002B9ACE /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		FE65A7C91FCB9F11002B9ACE /* ShareCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
+		FE65A7CA1FCB9F12002B9ACE /* AlbumResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumResultCell.swift; sourceTree = "<group>"; };
+		FE65A7CB1FCB9F12002B9ACE /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		FE65A7CC1FCB9F12002B9ACE /* InviteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteCell.swift; sourceTree = "<group>"; };
+		FE65A7CD1FCB9F13002B9ACE /* ArtistResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistResultCell.swift; sourceTree = "<group>"; };
+		FE65A7D71FCBA36E002B9ACE /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		FE65A7D91FCBA439002B9ACE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FE65A7DB1FCBBDF0002B9ACE /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		FE65A7DD1FCBCA34002B9ACE /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		FE65A7DF1FCBCC13002B9ACE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FE65A7E11FCBCD91002B9ACE /* icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon copy.png"; sourceTree = "<group>"; };
+		FEEDE2181FCA6B6A00679B2E /* e724ce6c-3a6f-42f4-9cd2-685d36643e32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e724ce6c-3a6f-42f4-9cd2-685d36643e32.png"; sourceTree = "<group>"; };
+		FEEDE2601FCA8AE100679B2E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE05CC691FC925590028FF9C /* SpotifyMetadata.framework in Frameworks */,
+				FE65A79D1FCB8BC3002B9ACE /* Pods_Party_DJ.framework in Frameworks */,
 				FE05CC6B1FC925590028FF9C /* SpotifyAudioPlayback.framework in Frameworks */,
 				FE05CC6A1FC925590028FF9C /* SpotifyAuthentication.framework in Frameworks */,
-				FE05CC4B1FC917BD0028FF9C /* Alamofire.framework in Frameworks */,
+				98660EF277029DEB4D06CDA2 /* Pods_Party_DJ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +259,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F50D872B10F691BD53E7FC /* Pods_Party_DJTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,22 +267,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A545CE8D68A459AE3BBE4D6 /* Pods_Party_DJUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A14F0A6E069C22DA5D755E63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9EF95C656A85E74F9FA31C8 /* Pods-Party-DJ.debug.xcconfig */,
+				444C68B9010AD158BBB0A760 /* Pods-Party-DJ.release.xcconfig */,
+				879EC300E8B5C5AEC02560C8 /* Pods-Party-DJTests.debug.xcconfig */,
+				AB6FA75B47FEDE3373FFB52D /* Pods-Party-DJTests.release.xcconfig */,
+				3522E2FF45FA7D168F7E7C04 /* Pods-Party-DJUITests.debug.xcconfig */,
+				00E3FE6E6EE9205B82697641 /* Pods-Party-DJUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE05CBDA1FC914330028FF9C = {
 			isa = PBXGroup;
 			children = (
-				FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */,
+				FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */,
 				FE05CBE51FC914330028FF9C /* Party-DJ */,
 				FE05CBFA1FC914330028FF9C /* Party-DJTests */,
 				FE05CC051FC914330028FF9C /* Party-DJUITests */,
 				FE05CBE41FC914330028FF9C /* Products */,
 				FE05CC141FC914BF0028FF9C /* Frameworks */,
 				FE05CC6C1FC927DD0028FF9C /* Party-DJ-Bridging-Header.h */,
+				FE05CC711FCA5C940028FF9C /* tenor.gif */,
+				FE65A7DF1FCBCC13002B9ACE /* icon.png */,
+				FE05CC781FCA615C0028FF9C /* giphy (1).gif */,
+				FE65A7E11FCBCD91002B9ACE /* icon copy.png */,
+				FE65A7DD1FCBCA34002B9ACE /* person.png */,
+				FE65A7DB1FCBBDF0002B9ACE /* background.jpg */,
+				FE05CC791FCA615C0028FF9C /* giphy (2).gif */,
+				FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */,
+				FE05CC751FCA615B0028FF9C /* giphy.gif */,
+				FE05CC761FCA615B0028FF9C /* tenor (1).gif */,
+				FE05CC771FCA615B0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif */,
+				FE05CC811FCA62D20028FF9C /* download.jpeg */,
+				FE05CC831FCA66C50028FF9C /* concert2.gif */,
+				FEEDE2181FCA6B6A00679B2E /* e724ce6c-3a6f-42f4-9cd2-685d36643e32.png */,
+				A14F0A6E069C22DA5D755E63 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,14 +329,35 @@
 			isa = PBXGroup;
 			children = (
 				FE05CBE61FC914330028FF9C /* AppDelegate.swift */,
+				FE65A78D1FCB8618002B9ACE /* Queue.swift */,
+				FE65A7991FCB863E002B9ACE /* Track.swift */,
 				FE05CBE81FC914330028FF9C /* ViewController.swift */,
+				FE65A7A31FCB9C5E002B9ACE /* welcomeViewController.swift */,
+				FE65A7AC1FCB9C9D002B9ACE /* createHomeViewController.swift */,
+				FE65A79B1FCB8677002B9ACE /* Quicksort.swift */,
+				FEEDE2601FCA8AE100679B2E /* User.swift */,
+				FE65A7D91FCBA439002B9ACE /* SearchViewController.swift */,
 				FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */,
 				FE05CC521FC9218D0028FF9C /* GIF.swift */,
 				FE05CC541FC922280028FF9C /* APIManager.swift */,
-				FE05CBEA1FC914330028FF9C /* Main.storyboard */,
+				FE05CBEA1FC914330028FF9C /* Main_1.storyboard */,
+				FE65A7D71FCBA36E002B9ACE /* CreateViewController.swift */,
 				FE05CBED1FC914330028FF9C /* Assets.xcassets */,
+				FE05CC6F1FCA599C0028FF9C /* concert.gif */,
 				FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */,
 				FE05CBF21FC914330028FF9C /* Info.plist */,
+				FE65A7B01FCB9D87002B9ACE /* TrackCell.swift */,
+				FE65A7BF1FCB9DCD002B9ACE /* Album.swift */,
+				FE65A7C11FCB9E0B002B9ACE /* AlbumViewController.swift */,
+				FE65A7C31FCB9E4E002B9ACE /* ArtistViewController.swift */,
+				FE65A7C51FCB9E78002B9ACE /* Artist.swift */,
+				FE65A7C71FCB9F11002B9ACE /* AlbumCell.swift */,
+				FE65A7CA1FCB9F12002B9ACE /* AlbumResultCell.swift */,
+				FE65A7CD1FCB9F13002B9ACE /* ArtistResultCell.swift */,
+				FE65A7CC1FCB9F12002B9ACE /* InviteCell.swift */,
+				FE65A7CB1FCB9F12002B9ACE /* SearchResultCell.swift */,
+				FE65A7C91FCB9F11002B9ACE /* ShareCell.swift */,
+				FE65A7C81FCB9F11002B9ACE /* UserCell.swift */,
 			);
 			path = "Party-DJ";
 			sourceTree = "<group>";
@@ -235,20 +390,26 @@
 				FE05CC171FC914F40028FF9C /* AudioToolbox.framework */,
 				FE05CC161FC914C70028FF9C /* AVFoundation.framework */,
 				FE05CC151FC914C00028FF9C /* UIKit.framework */,
+				AF34A303F4A23E14A8BB249F /* Pods_Party_DJ.framework */,
+				DBEE18F3E24D4F97FCDDBBD8 /* Pods_Party_DJTests.framework */,
+				D0B39170085FB9B56D350175 /* Pods_Party_DJUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FE05CC331FC917950028FF9C /* Products */ = {
+		FEEDE39A1FCB7D2600679B2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE05CC3E1FC917960028FF9C /* Alamofire.framework */,
-				FE05CC401FC917960028FF9C /* Alamofire iOS Tests.xctest */,
-				FE05CC421FC917960028FF9C /* Alamofire.framework */,
-				FE05CC441FC917960028FF9C /* Alamofire macOS Tests.xctest */,
-				FE05CC461FC917960028FF9C /* Alamofire.framework */,
-				FE05CC481FC917960028FF9C /* Alamofire tvOS Tests.xctest */,
-				FE05CC4A1FC917960028FF9C /* Alamofire.framework */,
+				FEEDE3A41FCB7D2600679B2E /* Alamofire.framework */,
+				FEEDE3A61FCB7D2600679B2E /* AlamofireImage.framework */,
+				FEEDE3A81FCB7D2600679B2E /* Bolts.framework */,
+				FE65A7BC1FCB9D88002B9ACE /* MarqueeLabel.framework */,
+				FEEDE3AA1FCB7D2600679B2E /* Parse.framework */,
+				FEEDE3AC1FCB7D2600679B2E /* Pods_Party_DJ.framework */,
+				FEEDE3AE1FCB7D2600679B2E /* Pods_Party_DJTests.framework */,
+				FEEDE3B01FCB7D2600679B2E /* Pods_Party_DJUITests.framework */,
+				FE65A7981FCB8619002B9ACE /* SkyFloatingLabelTextField.framework */,
+				FE65A7BE1FCB9D88002B9ACE /* SwipeCellKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,15 +421,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE05CC0B1FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJ" */;
 			buildPhases = (
+				53B8E76F0553656E8FD6EB9B /* [CP] Check Pods Manifest.lock */,
 				FE05CBDF1FC914330028FF9C /* Sources */,
 				FE05CBE01FC914330028FF9C /* Frameworks */,
 				FE05CBE11FC914330028FF9C /* Resources */,
-				FE05CC4F1FC917BE0028FF9C /* Embed Frameworks */,
+				FC9899E4BC89D9BEECC50782 /* [CP] Embed Pods Frameworks */,
+				D52DB9AE85ADAE6C9AC6F947 /* [CP] Copy Pods Resources */,
+				FEEDE32B1FCB781100679B2E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FE05CC4E1FC917BD0028FF9C /* PBXTargetDependency */,
+				FE65A7A01FCB8BC3002B9ACE /* PBXTargetDependency */,
 			);
 			name = "Party-DJ";
 			productName = "Party-DJ";
@@ -279,9 +443,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE05CC0E1FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJTests" */;
 			buildPhases = (
+				4379A926D0767F5035536FB1 /* [CP] Check Pods Manifest.lock */,
 				FE05CBF31FC914330028FF9C /* Sources */,
 				FE05CBF41FC914330028FF9C /* Frameworks */,
 				FE05CBF51FC914330028FF9C /* Resources */,
+				BD60E1C9B2A9500C2634FFA3 /* [CP] Embed Pods Frameworks */,
+				E4EFC5C9434DFFE7AAA1AC45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,9 +464,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE05CC111FC914330028FF9C /* Build configuration list for PBXNativeTarget "Party-DJUITests" */;
 			buildPhases = (
+				3A4BDCC843F102E94E4B7648 /* [CP] Check Pods Manifest.lock */,
 				FE05CBFE1FC914330028FF9C /* Sources */,
 				FE05CBFF1FC914330028FF9C /* Frameworks */,
 				FE05CC001FC914330028FF9C /* Resources */,
+				938980BBFB67AC2A3A230AE5 /* [CP] Embed Pods Frameworks */,
+				0E75B01EC577751DA16D56C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,8 +521,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = FE05CC331FC917950028FF9C /* Products */;
-					ProjectRef = FE05CC321FC917950028FF9C /* Alamofire.xcodeproj */;
+					ProductGroup = FEEDE39A1FCB7D2600679B2E /* Products */;
+					ProjectRef = FEEDE3991FCB7D2600679B2E /* Pods.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -365,53 +535,74 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FE05CC3E1FC917960028FF9C /* Alamofire.framework */ = {
+		FE65A7981FCB8619002B9ACE /* SkyFloatingLabelTextField.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SkyFloatingLabelTextField.framework;
+			remoteRef = FE65A7971FCB8619002B9ACE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE65A7BC1FCB9D88002B9ACE /* MarqueeLabel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MarqueeLabel.framework;
+			remoteRef = FE65A7BB1FCB9D88002B9ACE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE65A7BE1FCB9D88002B9ACE /* SwipeCellKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwipeCellKit.framework;
+			remoteRef = FE65A7BD1FCB9D88002B9ACE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEEDE3A41FCB7D2600679B2E /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
-			remoteRef = FE05CC3D1FC917960028FF9C /* PBXContainerItemProxy */;
+			remoteRef = FEEDE3A31FCB7D2600679B2E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FE05CC401FC917960028FF9C /* Alamofire iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire iOS Tests.xctest";
-			remoteRef = FE05CC3F1FC917960028FF9C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE05CC421FC917960028FF9C /* Alamofire.framework */ = {
+		FEEDE3A61FCB7D2600679B2E /* AlamofireImage.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = FE05CC411FC917960028FF9C /* PBXContainerItemProxy */;
+			path = AlamofireImage.framework;
+			remoteRef = FEEDE3A51FCB7D2600679B2E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FE05CC441FC917960028FF9C /* Alamofire macOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire macOS Tests.xctest";
-			remoteRef = FE05CC431FC917960028FF9C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE05CC461FC917960028FF9C /* Alamofire.framework */ = {
+		FEEDE3A81FCB7D2600679B2E /* Bolts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = FE05CC451FC917960028FF9C /* PBXContainerItemProxy */;
+			path = Bolts.framework;
+			remoteRef = FEEDE3A71FCB7D2600679B2E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FE05CC481FC917960028FF9C /* Alamofire tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = FE05CC471FC917960028FF9C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE05CC4A1FC917960028FF9C /* Alamofire.framework */ = {
+		FEEDE3AA1FCB7D2600679B2E /* Parse.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = FE05CC491FC917960028FF9C /* PBXContainerItemProxy */;
+			path = Parse.framework;
+			remoteRef = FEEDE3A91FCB7D2600679B2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEEDE3AC1FCB7D2600679B2E /* Pods_Party_DJ.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Party_DJ.framework;
+			remoteRef = FEEDE3AB1FCB7D2600679B2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEEDE3AE1FCB7D2600679B2E /* Pods_Party_DJTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Party_DJTests.framework;
+			remoteRef = FEEDE3AD1FCB7D2600679B2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEEDE3B01FCB7D2600679B2E /* Pods_Party_DJUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Party_DJUITests.framework;
+			remoteRef = FEEDE3AF1FCB7D2600679B2E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -421,9 +612,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE05CC7E1FCA615C0028FF9C /* giphy (1).gif in Resources */,
+				FE05CC7B1FCA615C0028FF9C /* giphy.gif in Resources */,
+				FE05CC7D1FCA615C0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif in Resources */,
+				FE05CC7F1FCA615C0028FF9C /* giphy (2).gif in Resources */,
+				FE65A7DE1FCBCA34002B9ACE /* person.png in Resources */,
+				FE05CC701FCA599D0028FF9C /* concert.gif in Resources */,
+				FE05CC7C1FCA615C0028FF9C /* tenor (1).gif in Resources */,
+				FE65A7DC1FCBBDF1002B9ACE /* background.jpg in Resources */,
+				FE05CC841FCA66C50028FF9C /* concert2.gif in Resources */,
+				FEEDE2201FCA6B6A00679B2E /* e724ce6c-3a6f-42f4-9cd2-685d36643e32.png in Resources */,
+				FE65A7E21FCBCD93002B9ACE /* icon copy.png in Resources */,
 				FE05CBF11FC914330028FF9C /* LaunchScreen.storyboard in Resources */,
+				FE05CC721FCA5C950028FF9C /* tenor.gif in Resources */,
+				FE65A7E01FCBCC14002B9ACE /* icon.png in Resources */,
 				FE05CBEE1FC914330028FF9C /* Assets.xcassets in Resources */,
-				FE05CBEC1FC914330028FF9C /* Main.storyboard in Resources */,
+				FE05CC821FCA62D30028FF9C /* download.jpeg in Resources */,
+				FE05CC801FCA615C0028FF9C /* giphy (3).gif in Resources */,
+				FE05CBEC1FC914330028FF9C /* Main_1.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,16 +649,198 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E75B01EC577751DA16D56C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Party-DJUITests/Pods-Party-DJUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A4BDCC843F102E94E4B7648 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Party-DJUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4379A926D0767F5035536FB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Party-DJTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53B8E76F0553656E8FD6EB9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Party-DJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		938980BBFB67AC2A3A230AE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Party-DJUITests/Pods-Party-DJUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD60E1C9B2A9500C2634FFA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Party-DJTests/Pods-Party-DJTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52DB9AE85ADAE6C9AC6F947 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Party-DJ/Pods-Party-DJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4EFC5C9434DFFE7AAA1AC45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Party-DJTests/Pods-Party-DJTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC9899E4BC89D9BEECC50782 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Party-DJ/Pods-Party-DJ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Party-DJ/Pods-Party-DJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE05CBDF1FC914330028FF9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FE05CC511FC91AFF0028FF9C /* LoginViewController.swift in Sources */,
+				FE65A79A1FCB863E002B9ACE /* Track.swift in Sources */,
+				FE65A7D11FCB9F13002B9ACE /* AlbumResultCell.swift in Sources */,
 				FE05CBE91FC914330028FF9C /* ViewController.swift in Sources */,
 				FE05CC551FC922280028FF9C /* APIManager.swift in Sources */,
+				FE65A7C01FCB9DCD002B9ACE /* Album.swift in Sources */,
+				FE65A7D41FCB9F13002B9ACE /* ArtistResultCell.swift in Sources */,
+				FE65A7CF1FCB9F13002B9ACE /* UserCell.swift in Sources */,
+				FE65A7D81FCBA36E002B9ACE /* CreateViewController.swift in Sources */,
+				FE65A7C21FCB9E0B002B9ACE /* AlbumViewController.swift in Sources */,
+				FE65A7AD1FCB9C9D002B9ACE /* createHomeViewController.swift in Sources */,
+				FE65A7D01FCB9F13002B9ACE /* ShareCell.swift in Sources */,
 				FE05CC531FC9218D0028FF9C /* GIF.swift in Sources */,
+				FE65A7B11FCB9D87002B9ACE /* TrackCell.swift in Sources */,
 				FE05CBE71FC914330028FF9C /* AppDelegate.swift in Sources */,
+				FE65A7DA1FCBA439002B9ACE /* SearchViewController.swift in Sources */,
+				FE65A7C41FCB9E4E002B9ACE /* ArtistViewController.swift in Sources */,
+				FE65A7A41FCB9C5E002B9ACE /* welcomeViewController.swift in Sources */,
+				FE65A7D31FCB9F13002B9ACE /* InviteCell.swift in Sources */,
+				FE65A78E1FCB8618002B9ACE /* Queue.swift in Sources */,
+				FE65A7C61FCB9E78002B9ACE /* Artist.swift in Sources */,
+				FEEDE2611FCA8AE100679B2E /* User.swift in Sources */,
+				FE65A79C1FCB8677002B9ACE /* Quicksort.swift in Sources */,
+				FE65A7D21FCB9F13002B9ACE /* SearchResultCell.swift in Sources */,
+				FE65A7CE1FCB9F13002B9ACE /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,20 +873,20 @@
 			target = FE05CBE21FC914330028FF9C /* Party-DJ */;
 			targetProxy = FE05CC031FC914330028FF9C /* PBXContainerItemProxy */;
 		};
-		FE05CC4E1FC917BD0028FF9C /* PBXTargetDependency */ = {
+		FE65A7A01FCB8BC3002B9ACE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Alamofire iOS";
-			targetProxy = FE05CC4D1FC917BD0028FF9C /* PBXContainerItemProxy */;
+			name = "Pods-Party-DJ";
+			targetProxy = FE65A79F1FCB8BC3002B9ACE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FE05CBEA1FC914330028FF9C /* Main.storyboard */ = {
+		FE05CBEA1FC914330028FF9C /* Main_1.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FE05CBEB1FC914330028FF9C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_1.storyboard;
 			sourceTree = "<group>";
 		};
 		FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */ = {
@@ -621,8 +1009,8 @@
 		};
 		FE05CC0C1FC914330028FF9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9EF95C656A85E74F9FA31C8 /* Pods-Party-DJ.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -645,8 +1033,8 @@
 		};
 		FE05CC0D1FC914330028FF9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444C68B9010AD158BBB0A760 /* Pods-Party-DJ.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -668,6 +1056,7 @@
 		};
 		FE05CC0F1FC914330028FF9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 879EC300E8B5C5AEC02560C8 /* Pods-Party-DJTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,6 +1074,7 @@
 		};
 		FE05CC101FC914330028FF9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6FA75B47FEDE3373FFB52D /* Pods-Party-DJTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -702,6 +1092,7 @@
 		};
 		FE05CC121FC914330028FF9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3522E2FF45FA7D168F7E7C04 /* Pods-Party-DJUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -718,6 +1109,7 @@
 		};
 		FE05CC131FC914330028FF9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00E3FE6E6EE9205B82697641 /* Pods-Party-DJUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

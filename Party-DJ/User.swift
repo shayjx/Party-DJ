@@ -5,9 +5,11 @@
 //  Created by Shana Joseph on 11/26/17.
 //
 
+import Foundation
+import Parse
 
 import Foundation
-
+import Parse
 
 class User {
     
