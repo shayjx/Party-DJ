@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yfu-Rw-Ajc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DevanagariSangamMN.ttc">
+            <string>DevanagariSangamMN-Bold</string>
+        </array>
+        <array key="HKGrotesk-Light.otf">
+            <string>HKGrotesk-Light</string>
+        </array>
+        <array key="HKGrotesk-Regular.otf">
+            <string>HKGrotesk-Regular</string>
+        </array>
+        <array key="HKGrotesk-SemiBold.otf">
+            <string>HKGrotesk-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="zp5-TF-LOB">
+            <objects>
+                <viewController title="LoginViewController" id="Yfu-Rw-Ajc" customClass="LoginViewController" customModule="Party_DJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mkH-eY-ZMB"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Dg-R8-WFd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZVM-1Y-ZXl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="MPU-I2-VHH">
+                                <rect key="frame" x="0.0" y="314" width="375" height="353"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="concert2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="IzG-TY-7eX">
+                                <rect key="frame" x="0.0" y="0.0" width="787" height="715"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vya-Dx-4SQ">
+                                <rect key="frame" x="75" y="459" width="227" height="45"/>
+                                <color key="backgroundColor" red="0.31967022546217783" green="0.81771069996271994" blue="0.96084690090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="4XT-bZ-wGX"/>
+                                    <constraint firstAttribute="height" constant="45" id="ghv-gD-WQW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="20"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="HOST"/>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="Yfu-Rw-Ajc" eventType="touchUpInside" id="MKK-fm-9iU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party DJ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8x-iJ-mNf">
+                                <rect key="frame" x="97" y="352" width="182" height="68"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcH-30-y5K">
+                                <rect key="frame" x="135" y="432" width="105" height="19"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Light" family="HK Grotesk" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="e724ce6c-3a6f-42f4-9cd2-685d36643e32.png" translatesAutoresizingMaskIntoConstraints="NO" id="K6r-BL-fd5">
+                                <rect key="frame" x="82" y="94" width="196" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="c3m-rU-Yho"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlK-42-g6n" userLabel="Join Button">
+                                <rect key="frame" x="74" y="538" width="227" height="45"/>
+                                <color key="backgroundColor" red="0.31967022550000002" green="0.81771070000000001" blue="0.96084690090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="0GS-iW-bBi"/>
+                                    <constraint firstAttribute="height" constant="45" id="QyM-KA-B9F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="20"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="JOIN"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K6r-BL-fd5" firstAttribute="centerX" secondItem="MPU-I2-VHH" secondAttribute="centerX" id="0sy-jF-y5x"/>
+                            <constraint firstItem="dcH-30-y5K" firstAttribute="centerX" secondItem="ZVM-1Y-ZXl" secondAttribute="centerX" id="4sK-Mc-2J0"/>
+                            <constraint firstItem="VlK-42-g6n" firstAttribute="leading" secondItem="vya-Dx-4SQ" secondAttribute="leading" id="6CY-0c-XXv"/>
+                            <constraint firstItem="VlK-42-g6n" firstAttribute="top" secondItem="vya-Dx-4SQ" secondAttribute="bottom" constant="18" id="Efz-Kr-xCO"/>
+                            <constraint firstItem="MPU-I2-VHH" firstAttribute="leading" secondItem="IzG-TY-7eX" secondAttribute="leading" id="GSL-VD-4rg"/>
+                            <constraint firstItem="8Dg-R8-WFd" firstAttribute="top" secondItem="IzG-TY-7eX" secondAttribute="bottom" id="L0D-ds-L8F"/>
+                            <constraint firstItem="MPU-I2-VHH" firstAttribute="top" secondItem="K6r-BL-fd5" secondAttribute="bottom" constant="20" id="Mcz-Kb-UnH"/>
+                            <constraint firstItem="P8x-iJ-mNf" firstAttribute="centerX" secondItem="ZVM-1Y-ZXl" secondAttribute="centerX" id="OEO-yh-pKi"/>
+                            <constraint firstItem="IzG-TY-7eX" firstAttribute="top" secondItem="ZVM-1Y-ZXl" secondAttribute="top" id="cSL-ij-TTD"/>
+                            <constraint firstItem="IzG-TY-7eX" firstAttribute="top" secondItem="P8x-iJ-mNf" secondAttribute="bottom" constant="-420" id="fec-vV-ShC"/>
+                            <constraint firstItem="MPU-I2-VHH" firstAttribute="bottom" secondItem="8Dg-R8-WFd" secondAttribute="top" id="g6C-AL-g8w"/>
+                            <constraint firstItem="dcH-30-y5K" firstAttribute="top" secondItem="P8x-iJ-mNf" secondAttribute="bottom" constant="12" id="gVr-BO-dDY"/>
+                            <constraint firstItem="IzG-TY-7eX" firstAttribute="leading" secondItem="ZVM-1Y-ZXl" secondAttribute="leading" id="gie-gS-8Ed"/>
+                            <constraint firstItem="vya-Dx-4SQ" firstAttribute="top" secondItem="dcH-30-y5K" secondAttribute="bottom" constant="24" id="hd7-2o-iqd"/>
+                            <constraint firstItem="K6r-BL-fd5" firstAttribute="leading" secondItem="LfL-9C-6bP" secondAttribute="leading" constant="82" id="iKj-sH-obb"/>
+                            <constraint firstItem="vya-Dx-4SQ" firstAttribute="centerX" secondItem="ZVM-1Y-ZXl" secondAttribute="centerX" id="pzN-ox-wly"/>
+                            <constraint firstAttribute="trailing" secondItem="IzG-TY-7eX" secondAttribute="trailing" id="rZf-ko-otg"/>
+                            <constraint firstItem="K6r-BL-fd5" firstAttribute="centerX" secondItem="P8x-iJ-mNf" secondAttribute="centerX" id="tuP-Th-3a3"/>
+                            <constraint firstItem="P8x-iJ-mNf" firstAttribute="top" secondItem="K6r-BL-fd5" secondAttribute="bottom" constant="8" symbolic="YES" id="z0c-JV-wn1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LfL-9C-6bP"/>
+                    </view>
+                    <connections>
+                        <outlet property="gifBackgroundImage" destination="IzG-TY-7eX" id="0jW-41-VQ3"/>
+                        <outlet property="joinButton" destination="VlK-42-g6n" id="uMs-Is-NcQ"/>
+                        <outlet property="loginButton" destination="vya-Dx-4SQ" id="ZGa-wZ-hM4"/>
+                        <outlet property="welcomeLabel" destination="dcH-30-y5K" id="7d9-sB-bLa"/>
+                        <segue destination="Sek-GP-t0y" kind="presentation" identifier="loginSegue" id="6UU-yw-8kg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0b-bn-lhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3791.1999999999998" y="-1192.3538230884558"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="t0d-wc-s3Q">
+            <objects>
+                <viewController storyboardIdentifier="welcomeViewController" title="HomeViewController" id="3dh-BD-E0g" customClass="HostMainViewController" customModule="Party_DJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GTb-zg-L6N"/>
+                        <viewControllerLayoutGuide type="bottom" id="2CZ-RB-BGk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wYA-u4-AJd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="join-gradient" translatesAutoresizingMaskIntoConstraints="NO" id="wSF-Iu-QiL">
+                                <rect key="frame" x="0.0" y="336" width="375" height="331"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="331" id="xX6-dy-gxS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egp-QY-ptZ">
+                                <rect key="frame" x="131" y="271" width="114.5" height="30.5"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start listening" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHB-kl-cDC">
+                                <rect key="frame" x="132.5" y="317.5" width="110.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3G-31-YMb">
+                                <rect key="frame" x="78" y="382.5" width="219" height="45"/>
+                                <color key="backgroundColor" red="0.51728105550000003" green="0.13359223310000001" blue="0.96084690090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7Qs-d8-142"/>
+                                    <constraint firstAttribute="width" constant="219" id="9xc-Hz-NZt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="20"/>
+                                <state key="normal" title="Create Playlist"/>
+                                <connections>
+                                    <action selector="didTapCreate:" destination="3dh-BD-E0g" eventType="touchUpInside" id="5Iu-eE-ThW"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKI-VS-n6A">
+                                <rect key="frame" x="127" y="139" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.29933306570000001" green="0.074969418349999997" blue="0.43601283429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="c1s-gr-3NX"/>
+                                    <constraint firstAttribute="width" constant="120" id="pvg-qD-Ti6"/>
+                                </constraints>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="center" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-6I-ywr">
+                                <rect key="frame" x="142" y="154" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="3XU-eK-I3h"/>
+                                    <constraint firstAttribute="height" constant="90" id="7GB-Gt-uzr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmY-Ar-L6L">
+                                <rect key="frame" x="22" y="341.5" width="331" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="331" id="f6a-p1-QE3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGb-8x-HUF">
+                                <rect key="frame" x="78" y="451.5" width="219" height="45"/>
+                                <color key="backgroundColor" red="0.98040139680000005" green="0.98038303849999997" blue="0.98039543630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="RLy-VL-Ra4"/>
+                                    <constraint firstAttribute="width" constant="219" id="VqY-A5-pX8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="20"/>
+                                <state key="normal" title="Join Playlist">
+                                    <color key="titleColor" red="0.54016995430000003" green="0.1780255288" blue="0.96084606650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapJoin:" destination="3dh-BD-E0g" eventType="touchUpInside" id="djm-XO-f95"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GbK-0y-gWh">
+                                <rect key="frame" x="128" y="139" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="NIV-cX-BAZ"/>
+                                    <constraint firstAttribute="width" constant="120" id="gwa-vB-81e"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="x3G-31-YMb" firstAttribute="top" secondItem="nmY-Ar-L6L" secondAttribute="bottom" constant="24" id="4b8-Bz-8gh"/>
+                            <constraint firstItem="wSF-Iu-QiL" firstAttribute="leading" secondItem="wYA-u4-AJd" secondAttribute="leading" id="DsP-4O-LfE"/>
+                            <constraint firstItem="egp-QY-ptZ" firstAttribute="centerX" secondItem="wYA-u4-AJd" secondAttribute="centerX" id="EMN-eD-qfn"/>
+                            <constraint firstItem="iHB-kl-cDC" firstAttribute="top" secondItem="egp-QY-ptZ" secondAttribute="bottom" constant="16" id="Htl-JR-4Rx"/>
+                            <constraint firstItem="iHB-kl-cDC" firstAttribute="centerX" secondItem="wYA-u4-AJd" secondAttribute="centerX" id="I7P-l6-9vG"/>
+                            <constraint firstAttribute="trailing" secondItem="wSF-Iu-QiL" secondAttribute="trailing" id="Mbj-LI-I6P"/>
+                            <constraint firstItem="egp-QY-ptZ" firstAttribute="top" secondItem="GbK-0y-gWh" secondAttribute="bottom" constant="12" id="NYj-P3-Vfw"/>
+                            <constraint firstItem="dGb-8x-HUF" firstAttribute="top" secondItem="x3G-31-YMb" secondAttribute="bottom" constant="24" id="Qum-gL-xgN"/>
+                            <constraint firstItem="LKI-VS-n6A" firstAttribute="top" secondItem="GbK-0y-gWh" secondAttribute="top" id="RHS-yd-IDw"/>
+                            <constraint firstItem="dGb-8x-HUF" firstAttribute="centerX" secondItem="wYA-u4-AJd" secondAttribute="centerX" id="Ws2-Im-Itm"/>
+                            <constraint firstItem="9Ah-6I-ywr" firstAttribute="centerX" secondItem="LKI-VS-n6A" secondAttribute="centerX" id="Xu9-2v-eRK"/>
+                            <constraint firstItem="2CZ-RB-BGk" firstAttribute="top" secondItem="wSF-Iu-QiL" secondAttribute="bottom" id="d6D-zB-AkO"/>
+                            <constraint firstItem="9Ah-6I-ywr" firstAttribute="centerY" secondItem="LKI-VS-n6A" secondAttribute="centerY" id="fmB-ZH-MAo"/>
+                            <constraint firstItem="x3G-31-YMb" firstAttribute="centerX" secondItem="wYA-u4-AJd" secondAttribute="centerX" id="jZQ-eY-VhF"/>
+                            <constraint firstItem="nmY-Ar-L6L" firstAttribute="centerX" secondItem="wYA-u4-AJd" secondAttribute="centerX" id="m98-oJ-flL"/>
+                            <constraint firstItem="LKI-VS-n6A" firstAttribute="centerX" secondItem="wYA-u4-AJd" secondAttribute="centerX" id="oqI-zc-fE4"/>
+                            <constraint firstItem="GbK-0y-gWh" firstAttribute="centerX" secondItem="wYA-u4-AJd" secondAttribute="centerX" id="sbM-WA-KOx"/>
+                            <constraint firstItem="nmY-Ar-L6L" firstAttribute="top" secondItem="iHB-kl-cDC" secondAttribute="bottom" constant="3" id="ugO-6Q-Lex"/>
+                            <constraint firstItem="GbK-0y-gWh" firstAttribute="top" secondItem="GTb-zg-L6N" secondAttribute="bottom" constant="75" id="vyG-go-1Hs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EG1-Zu-cRO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O5t-1b-ax3">
+                        <barButtonItem key="leftBarButtonItem" image="logout" style="plain" id="C5r-Ex-qN1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="didTapLogout:" destination="3dh-BD-E0g" id="55M-xN-cjh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="createPlaylistButton" destination="x3G-31-YMb" id="FyK-6c-hxA"/>
+                        <outlet property="defaultProfileView" destination="LKI-VS-n6A" id="DnU-hh-ns5"/>
+                        <outlet property="instructionsLabel" destination="nmY-Ar-L6L" id="ndi-O5-Qou"/>
+                        <outlet property="joinPlaylistButton" destination="dGb-8x-HUF" id="fGB-i8-Ny8"/>
+                        <outlet property="profileImage" destination="GbK-0y-gWh" id="orm-o7-6Xv"/>
+                        <outlet property="welcomeLabel" destination="egp-QY-ptZ" id="Cie-tQ-B5q"/>
+                        <segue destination="Yfu-Rw-Ajc" kind="presentation" identifier="logoutSegue" id="iiU-qD-2Ql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooW-lc-9TV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1399.2" y="-1192.3538230884558"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sAt-GO-Akq">
+            <objects>
+                <navigationController storyboardIdentifier="welcomeNavigation" automaticallyAdjustsScrollViewInsets="NO" id="Sek-GP-t0y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3LT-IO-BE6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3dh-BD-E0g" kind="relationship" relationship="rootViewController" id="EDi-rs-ySg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jia-5W-0Rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2244" y="-1192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="concert2.gif" width="498" height="268"/>
+        <image name="download.jpeg" width="246" height="205"/>
+        <image name="e724ce6c-3a6f-42f4-9cd2-685d36643e32.png" width="316" height="353"/>
+        <image name="join-gradient" width="16" height="16"/>
+        <image name="logout" width="16" height="16"/>
+        <image name="user" width="16" height="16"/>
+    </resources>
+</document>
