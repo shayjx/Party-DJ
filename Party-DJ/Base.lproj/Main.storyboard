@@ -212,7 +212,8 @@
                                 <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="20"/>
                                 <state key="normal" title="Choose Playlists"/>
                                 <connections>
-                                    <action selector="didTapPlaylist:" destination="JCU-n1-8fr" eventType="touchUpInside" id="Phx-sr-G6M"/>
+                                    <action selector="didTapPlaylist:" destination="JCU-n1-8fr" eventType="touchUpInside" id="15A-ba-Zs9"/>
+                                    <segue destination="MYK-Sk-YD7" kind="presentation" id="9WO-93-qK2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -268,7 +269,7 @@
                             <nil key="action"/>
                         </segue>
                         <segue destination="kTg-FU-SyZ" kind="presentation" identifier="logoutSegue" id="cQL-OY-lyT"/>
-                        <segue destination="MYK-Sk-YD7" kind="show" id="L4D-la-wGK"/>
+                        <segue destination="MYK-Sk-YD7" kind="show" id="0uO-3s-KeN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haV-fk-kWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hRj-ma-nt0">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="331" id="B23-wO-zNT"/>
                                 </constraints>
@@ -1389,7 +1390,8 @@
         <image name="user-plus" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="js8-Zm-4YZ"/>
-        <segue reference="udw-Zx-XRo"/>
+        <segue reference="Jut-le-Fg5"/>
+        <segue reference="vyt-gu-2yD"/>
+        <segue reference="0uO-3s-KeN"/>
     </inferredMetricsTieBreakers>
 </document>

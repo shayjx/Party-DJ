@@ -1,0 +1,6 @@
+framework module Pods_Party_DJ {
+  umbrella header "Pods-Party-DJ-umbrella.h"
+
+  export *
+  module * { export * }
+}
