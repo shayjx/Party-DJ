@@ -38,9 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // Override point for customization after application launch.
-        auth.redirectURL = URL(string: "Kickback://returnAfterLogin")
+        auth.redirectURL = URL(string: "partydj-spotify://callback")
         auth.sessionUserDefaultsKey = "current session"
         
+       /*
         // Initialize Parse
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
@@ -49,6 +50,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "http://partydj.herokuapp.com/parse"
             })
         )
+        */
+        
+        Parse.initialize(with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+            configuration.server = "https://partydj1.herokuapp.com/parse/" // '/' important after 'parse'
+            configuration.applicationId = "PartyDj1"
+        }))
         
         // Check for signed in user
         if let user = User.current {

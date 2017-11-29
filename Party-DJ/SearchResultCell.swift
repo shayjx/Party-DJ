@@ -1,9 +1,6 @@
 //
 //  SearchResultCell.swift
-//  Kickback
 //
-//  Created by Daniel Afolabi on 7/16/17.
-//  Copyright © 2017 FBU. All rights reserved.
 //
 
 import UIKit

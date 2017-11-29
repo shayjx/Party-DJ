@@ -1,9 +1,6 @@
 //
 //  InviteCell.swift
-//  Kickback
 //
-//  Created by Katie Jiang on 7/27/17.
-//  Copyright © 2017 FBU. All rights reserved.
 //
 
 import UIKit

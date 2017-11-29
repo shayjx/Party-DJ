@@ -1,9 +1,6 @@
 //
 //  ShareCell.swift
-//  Kickback
 //
-//  Created by Katie Jiang on 7/25/17.
-//  Copyright © 2017 FBU. All rights reserved.
 //
 
 import UIKit

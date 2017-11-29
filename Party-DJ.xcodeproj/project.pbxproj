@@ -12,7 +12,7 @@
 		98660EF277029DEB4D06CDA2 /* Pods_Party_DJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF34A303F4A23E14A8BB249F /* Pods_Party_DJ.framework */; };
 		FE05CBE71FC914330028FF9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBE61FC914330028FF9C /* AppDelegate.swift */; };
 		FE05CBE91FC914330028FF9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBE81FC914330028FF9C /* ViewController.swift */; };
-		FE05CBEC1FC914330028FF9C /* Main_1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBEA1FC914330028FF9C /* Main_1.storyboard */; };
+		FE05CBEC1FC914330028FF9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBEA1FC914330028FF9C /* Main.storyboard */; };
 		FE05CBEE1FC914330028FF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBED1FC914330028FF9C /* Assets.xcassets */; };
 		FE05CBF11FC914330028FF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */; };
 		FE05CBFC1FC914330028FF9C /* Party_DJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05CBFB1FC914330028FF9C /* Party_DJTests.swift */; };
@@ -33,6 +33,7 @@
 		FE05CC801FCA615C0028FF9C /* giphy (3).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */; };
 		FE05CC821FCA62D30028FF9C /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC811FCA62D20028FF9C /* download.jpeg */; };
 		FE05CC841FCA66C50028FF9C /* concert2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC831FCA66C50028FF9C /* concert2.gif */; };
+		FE0D429C1FCDF5A400E2FCBD /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D429B1FCDF5A400E2FCBD /* PlaylistViewController.swift */; };
 		FE65A78E1FCB8618002B9ACE /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A78D1FCB8618002B9ACE /* Queue.swift */; };
 		FE65A79A1FCB863E002B9ACE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7991FCB863E002B9ACE /* Track.swift */; };
 		FE65A79C1FCB8677002B9ACE /* Quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A79B1FCB8677002B9ACE /* Quicksort.swift */; };
@@ -183,7 +184,7 @@
 		FE05CBE31FC914330028FF9C /* Party-DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party-DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE05CBE61FC914330028FF9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE05CBE81FC914330028FF9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE05CBEB1FC914330028FF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_1.storyboard; sourceTree = "<group>"; };
+		FE05CBEB1FC914330028FF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE05CBED1FC914330028FF9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE05CBF01FC914330028FF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE05CBF21FC914330028FF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,6 +215,7 @@
 		FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy (3).gif"; sourceTree = "<group>"; };
 		FE05CC811FCA62D20028FF9C /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		FE05CC831FCA66C50028FF9C /* concert2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = concert2.gif; path = ../../Documents/concert2.gif; sourceTree = "<group>"; };
+		FE0D429B1FCDF5A400E2FCBD /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		FE65A78D1FCB8618002B9ACE /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		FE65A7991FCB863E002B9ACE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		FE65A79B1FCB8677002B9ACE /* Quicksort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quicksort.swift; sourceTree = "<group>"; };
@@ -340,8 +342,9 @@
 				FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */,
 				FE05CC521FC9218D0028FF9C /* GIF.swift */,
 				FE05CC541FC922280028FF9C /* APIManager.swift */,
-				FE05CBEA1FC914330028FF9C /* Main_1.storyboard */,
+				FE05CBEA1FC914330028FF9C /* Main.storyboard */,
 				FE65A7D71FCBA36E002B9ACE /* CreateViewController.swift */,
+				FE0D429B1FCDF5A400E2FCBD /* PlaylistViewController.swift */,
 				FE05CBED1FC914330028FF9C /* Assets.xcassets */,
 				FE05CC6F1FCA599C0028FF9C /* concert.gif */,
 				FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */,
@@ -629,7 +632,7 @@
 				FE05CBEE1FC914330028FF9C /* Assets.xcassets in Resources */,
 				FE05CC821FCA62D30028FF9C /* download.jpeg in Resources */,
 				FE05CC801FCA615C0028FF9C /* giphy (3).gif in Resources */,
-				FE05CBEC1FC914330028FF9C /* Main_1.storyboard in Resources */,
+				FE05CBEC1FC914330028FF9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +823,7 @@
 				FE65A79A1FCB863E002B9ACE /* Track.swift in Sources */,
 				FE65A7D11FCB9F13002B9ACE /* AlbumResultCell.swift in Sources */,
 				FE05CBE91FC914330028FF9C /* ViewController.swift in Sources */,
+				FE0D429C1FCDF5A400E2FCBD /* PlaylistViewController.swift in Sources */,
 				FE05CC551FC922280028FF9C /* APIManager.swift in Sources */,
 				FE65A7C01FCB9DCD002B9ACE /* Album.swift in Sources */,
 				FE65A7D41FCB9F13002B9ACE /* ArtistResultCell.swift in Sources */,
@@ -881,12 +885,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FE05CBEA1FC914330028FF9C /* Main_1.storyboard */ = {
+		FE05CBEA1FC914330028FF9C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FE05CBEB1FC914330028FF9C /* Base */,
 			);
-			name = Main_1.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */ = {

@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var instructionsLabel: UILabel!
     
-    @IBOutlet weak var joinPlaylistButton: UIButton!
+    @IBOutlet weak var yourPlaylistButton: UIButton!
     @IBOutlet weak var createPlaylistButton: UIButton!
     @IBOutlet weak var logOutPlaylistButton: UIButton!
     
@@ -36,14 +36,14 @@ class WelcomeViewController: UIViewController {
         defaultProfileView.clipsToBounds = true
         
         // Style Join Playlist Button
-        joinPlaylistButton.layer.cornerRadius = joinPlaylistButton.frame.width * 0.10
-        joinPlaylistButton.layer.masksToBounds = true
+        yourPlaylistButton.layer.cornerRadius = yourPlaylistButton.frame.width * 0.10
+        yourPlaylistButton.layer.masksToBounds = true
         
         // Style Create Playlist Button
         createPlaylistButton.layer.cornerRadius = createPlaylistButton.frame.width * 0.10
         createPlaylistButton.layer.masksToBounds = true
         
-        logOutPlaylistButton.layer.cornerRadius = createPlaylistButton.frame.width * 0.10
+        logOutPlaylistButton.layer.cornerRadius = logOutPlaylistButton.frame.width * 0.10
         logOutPlaylistButton.layer.masksToBounds = true
       
         
@@ -82,8 +82,8 @@ class WelcomeViewController: UIViewController {
         performSegue(withIdentifier: "createSegue", sender: self)
     }
     
-    @IBAction func didTapJoin(_ sender: Any) {
-        performSegue(withIdentifier: "joinSegue", sender: self)
+    @IBAction func didTapPlaylist(_ sender: Any) {
+        performSegue(withIdentifier: "playlistSegue", sender: self)
     }
     
     @IBAction func didTapLogout(_ sender: Any) {
