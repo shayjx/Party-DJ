@@ -213,7 +213,6 @@
                                 <state key="normal" title="Choose Playlists"/>
                                 <connections>
                                     <action selector="didTapPlaylist:" destination="JCU-n1-8fr" eventType="touchUpInside" id="15A-ba-Zs9"/>
-                                    <segue destination="MYK-Sk-YD7" kind="presentation" id="9WO-93-qK2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -269,7 +268,6 @@
                             <nil key="action"/>
                         </segue>
                         <segue destination="kTg-FU-SyZ" kind="presentation" identifier="logoutSegue" id="cQL-OY-lyT"/>
-                        <segue destination="MYK-Sk-YD7" kind="show" id="0uO-3s-KeN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haV-fk-kWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -893,7 +891,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bon-sx-AcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-602.39999999999998" y="-132.68365817091455"/>
+            <point key="canvasLocation" x="-130" y="-38"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="bgH-3z-tQS">
@@ -1392,6 +1390,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="Jut-le-Fg5"/>
         <segue reference="vyt-gu-2yD"/>
-        <segue reference="0uO-3s-KeN"/>
     </inferredMetricsTieBreakers>
 </document>
