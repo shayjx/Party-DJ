@@ -24,16 +24,17 @@
 		FE05CC6A1FC925590028FF9C /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC671FC925590028FF9C /* SpotifyAuthentication.framework */; };
 		FE05CC6B1FC925590028FF9C /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05CC681FC925590028FF9C /* SpotifyAudioPlayback.framework */; };
 		FE05CC701FCA599D0028FF9C /* concert.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC6F1FCA599C0028FF9C /* concert.gif */; };
-		FE05CC721FCA5C950028FF9C /* tenor.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC711FCA5C940028FF9C /* tenor.gif */; };
-		FE05CC7B1FCA615C0028FF9C /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC751FCA615B0028FF9C /* giphy.gif */; };
-		FE05CC7C1FCA615C0028FF9C /* tenor (1).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC761FCA615B0028FF9C /* tenor (1).gif */; };
-		FE05CC7D1FCA615C0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC771FCA615B0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif */; };
-		FE05CC7E1FCA615C0028FF9C /* giphy (1).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC781FCA615C0028FF9C /* giphy (1).gif */; };
 		FE05CC7F1FCA615C0028FF9C /* giphy (2).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC791FCA615C0028FF9C /* giphy (2).gif */; };
 		FE05CC801FCA615C0028FF9C /* giphy (3).gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */; };
 		FE05CC821FCA62D30028FF9C /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC811FCA62D20028FF9C /* download.jpeg */; };
 		FE05CC841FCA66C50028FF9C /* concert2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE05CC831FCA66C50028FF9C /* concert2.gif */; };
 		FE0D429C1FCDF5A400E2FCBD /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D429B1FCDF5A400E2FCBD /* PlaylistViewController.swift */; };
+		FE26ACE11FD65AF2001B3833 /* JoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE26ACE01FD65AF2001B3833 /* JoinController.swift */; };
+		FE26ACEE1FD67083001B3833 /* 5ca71cd1-4d1a-4b59-bbf1-00bf0540379b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE26ACED1FD67080001B3833 /* 5ca71cd1-4d1a-4b59-bbf1-00bf0540379b.jpg */; };
+		FE26ACF01FD6708D001B3833 /* PlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26ACEF1FD6708B001B3833 /* PlayButton.png */; };
+		FE26ACF21FD671BC001B3833 /* addButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE26ACF11FD671BC001B3833 /* addButton.jpg */; };
+		FE26ACF41FD671D6001B3833 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26ACF31FD671D6001B3833 /* nextButton.png */; };
+		FE26ACF61FD671EF001B3833 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26ACF51FD671EE001B3833 /* prevButton.png */; };
 		FE65A78E1FCB8618002B9ACE /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A78D1FCB8618002B9ACE /* Queue.swift */; };
 		FE65A79A1FCB863E002B9ACE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A7991FCB863E002B9ACE /* Track.swift */; };
 		FE65A79C1FCB8677002B9ACE /* Quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65A79B1FCB8677002B9ACE /* Quicksort.swift */; };
@@ -206,16 +207,20 @@
 		FE05CC681FC925590028FF9C /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		FE05CC6C1FC927DD0028FF9C /* Party-DJ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Party-DJ-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE05CC6F1FCA599C0028FF9C /* concert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = concert.gif; sourceTree = "<group>"; };
-		FE05CC711FCA5C940028FF9C /* tenor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tenor.gif; sourceTree = "<group>"; };
-		FE05CC751FCA615B0028FF9C /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
-		FE05CC761FCA615B0028FF9C /* tenor (1).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tenor (1).gif"; sourceTree = "<group>"; };
-		FE05CC771FCA615B0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tumblr_odmnhdGDqI1vf5mrco1_250.gif; sourceTree = "<group>"; };
-		FE05CC781FCA615C0028FF9C /* giphy (1).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy (1).gif"; sourceTree = "<group>"; };
 		FE05CC791FCA615C0028FF9C /* giphy (2).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy (2).gif"; sourceTree = "<group>"; };
 		FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy (3).gif"; sourceTree = "<group>"; };
 		FE05CC811FCA62D20028FF9C /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		FE05CC831FCA66C50028FF9C /* concert2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = concert2.gif; path = ../../Documents/concert2.gif; sourceTree = "<group>"; };
 		FE0D429B1FCDF5A400E2FCBD /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		FE26ACE01FD65AF2001B3833 /* JoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinController.swift; sourceTree = "<group>"; };
+		FE26ACED1FD67080001B3833 /* 5ca71cd1-4d1a-4b59-bbf1-00bf0540379b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5ca71cd1-4d1a-4b59-bbf1-00bf0540379b.jpg"; sourceTree = "<group>"; };
+		FE26ACEF1FD6708B001B3833 /* PlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButton.png; sourceTree = "<group>"; };
+		FE26ACF11FD671BC001B3833 /* addButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = addButton.jpg; sourceTree = "<group>"; };
+		FE26ACF31FD671D6001B3833 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
+		FE26ACF51FD671EE001B3833 /* prevButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButton.png; sourceTree = "<group>"; };
+		FE26ACF81FD6EDF9001B3833 /* concert2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = concert2.gif; sourceTree = "<group>"; };
+		FE26ACF91FD6EE09001B3833 /* concert2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = concert2.gif; path = ../../../Documents/concert2.gif; sourceTree = "<group>"; };
+		FE26ACFA1FD6EE31001B3833 /* concert2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = concert2.gif; path = ../../../Documents/concert2.gif; sourceTree = "<group>"; };
 		FE65A78D1FCB8618002B9ACE /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		FE65A7991FCB863E002B9ACE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		FE65A79B1FCB8677002B9ACE /* Quicksort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quicksort.swift; sourceTree = "<group>"; };
@@ -299,20 +304,8 @@
 				FE05CBE41FC914330028FF9C /* Products */,
 				FE05CC141FC914BF0028FF9C /* Frameworks */,
 				FE05CC6C1FC927DD0028FF9C /* Party-DJ-Bridging-Header.h */,
-				FE05CC711FCA5C940028FF9C /* tenor.gif */,
-				FE65A7DF1FCBCC13002B9ACE /* icon.png */,
-				FE05CC781FCA615C0028FF9C /* giphy (1).gif */,
-				FE65A7E11FCBCD91002B9ACE /* icon copy.png */,
-				FE65A7DD1FCBCA34002B9ACE /* person.png */,
-				FE65A7DB1FCBBDF0002B9ACE /* background.jpg */,
-				FE05CC791FCA615C0028FF9C /* giphy (2).gif */,
-				FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */,
-				FE05CC751FCA615B0028FF9C /* giphy.gif */,
-				FE05CC761FCA615B0028FF9C /* tenor (1).gif */,
-				FE05CC771FCA615B0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif */,
-				FE05CC811FCA62D20028FF9C /* download.jpeg */,
+				FE26ACF71FD6EDBB001B3833 /* Images */,
 				FE05CC831FCA66C50028FF9C /* concert2.gif */,
-				FEEDE2181FCA6B6A00679B2E /* e724ce6c-3a6f-42f4-9cd2-685d36643e32.png */,
 				A14F0A6E069C22DA5D755E63 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -331,28 +324,20 @@
 			isa = PBXGroup;
 			children = (
 				FE05CBE61FC914330028FF9C /* AppDelegate.swift */,
+				FE26ACFB1FD6EE40001B3833 /* Controllers */,
 				FE65A78D1FCB8618002B9ACE /* Queue.swift */,
 				FE65A7991FCB863E002B9ACE /* Track.swift */,
-				FE05CBE81FC914330028FF9C /* ViewController.swift */,
-				FE65A7A31FCB9C5E002B9ACE /* welcomeViewController.swift */,
-				FE65A7AC1FCB9C9D002B9ACE /* createHomeViewController.swift */,
 				FE65A79B1FCB8677002B9ACE /* Quicksort.swift */,
 				FEEDE2601FCA8AE100679B2E /* User.swift */,
-				FE65A7D91FCBA439002B9ACE /* SearchViewController.swift */,
-				FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */,
 				FE05CC521FC9218D0028FF9C /* GIF.swift */,
 				FE05CC541FC922280028FF9C /* APIManager.swift */,
 				FE05CBEA1FC914330028FF9C /* Main.storyboard */,
-				FE65A7D71FCBA36E002B9ACE /* CreateViewController.swift */,
-				FE0D429B1FCDF5A400E2FCBD /* PlaylistViewController.swift */,
 				FE05CBED1FC914330028FF9C /* Assets.xcassets */,
 				FE05CC6F1FCA599C0028FF9C /* concert.gif */,
 				FE05CBEF1FC914330028FF9C /* LaunchScreen.storyboard */,
 				FE05CBF21FC914330028FF9C /* Info.plist */,
 				FE65A7B01FCB9D87002B9ACE /* TrackCell.swift */,
 				FE65A7BF1FCB9DCD002B9ACE /* Album.swift */,
-				FE65A7C11FCB9E0B002B9ACE /* AlbumViewController.swift */,
-				FE65A7C31FCB9E4E002B9ACE /* ArtistViewController.swift */,
 				FE65A7C51FCB9E78002B9ACE /* Artist.swift */,
 				FE65A7C71FCB9F11002B9ACE /* AlbumCell.swift */,
 				FE65A7CA1FCB9F12002B9ACE /* AlbumResultCell.swift */,
@@ -398,6 +383,46 @@
 				D0B39170085FB9B56D350175 /* Pods_Party_DJUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE26ACF71FD6EDBB001B3833 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FE26ACF91FD6EE09001B3833 /* concert2.gif */,
+				FE26ACFA1FD6EE31001B3833 /* concert2.gif */,
+				FE26ACF51FD671EE001B3833 /* prevButton.png */,
+				FE26ACF31FD671D6001B3833 /* nextButton.png */,
+				FE65A7DB1FCBBDF0002B9ACE /* background.jpg */,
+				FE05CC791FCA615C0028FF9C /* giphy (2).gif */,
+				FE26ACF11FD671BC001B3833 /* addButton.jpg */,
+				FE26ACED1FD67080001B3833 /* 5ca71cd1-4d1a-4b59-bbf1-00bf0540379b.jpg */,
+				FE05CC7A1FCA615C0028FF9C /* giphy (3).gif */,
+				FE26ACEF1FD6708B001B3833 /* PlayButton.png */,
+				FE05CC811FCA62D20028FF9C /* download.jpeg */,
+				FE26ACF81FD6EDF9001B3833 /* concert2.gif */,
+				FEEDE2181FCA6B6A00679B2E /* e724ce6c-3a6f-42f4-9cd2-685d36643e32.png */,
+				FE65A7DD1FCBCA34002B9ACE /* person.png */,
+				FE65A7E11FCBCD91002B9ACE /* icon copy.png */,
+				FE65A7DF1FCBCC13002B9ACE /* icon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FE26ACFB1FD6EE40001B3833 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE26ACE01FD65AF2001B3833 /* JoinController.swift */,
+				FE05CBE81FC914330028FF9C /* ViewController.swift */,
+				FE65A7A31FCB9C5E002B9ACE /* welcomeViewController.swift */,
+				FE65A7AC1FCB9C9D002B9ACE /* createHomeViewController.swift */,
+				FE65A7D91FCBA439002B9ACE /* SearchViewController.swift */,
+				FE05CC501FC91AFF0028FF9C /* LoginViewController.swift */,
+				FE65A7D71FCBA36E002B9ACE /* CreateViewController.swift */,
+				FE0D429B1FCDF5A400E2FCBD /* PlaylistViewController.swift */,
+				FE65A7C11FCB9E0B002B9ACE /* AlbumViewController.swift */,
+				FE65A7C31FCB9E4E002B9ACE /* ArtistViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FEEDE39A1FCB7D2600679B2E /* Products */ = {
@@ -615,20 +640,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE05CC7E1FCA615C0028FF9C /* giphy (1).gif in Resources */,
-				FE05CC7B1FCA615C0028FF9C /* giphy.gif in Resources */,
-				FE05CC7D1FCA615C0028FF9C /* tumblr_odmnhdGDqI1vf5mrco1_250.gif in Resources */,
 				FE05CC7F1FCA615C0028FF9C /* giphy (2).gif in Resources */,
 				FE65A7DE1FCBCA34002B9ACE /* person.png in Resources */,
 				FE05CC701FCA599D0028FF9C /* concert.gif in Resources */,
-				FE05CC7C1FCA615C0028FF9C /* tenor (1).gif in Resources */,
+				FE26ACEE1FD67083001B3833 /* 5ca71cd1-4d1a-4b59-bbf1-00bf0540379b.jpg in Resources */,
 				FE65A7DC1FCBBDF1002B9ACE /* background.jpg in Resources */,
+				FE26ACF21FD671BC001B3833 /* addButton.jpg in Resources */,
 				FE05CC841FCA66C50028FF9C /* concert2.gif in Resources */,
 				FEEDE2201FCA6B6A00679B2E /* e724ce6c-3a6f-42f4-9cd2-685d36643e32.png in Resources */,
+				FE26ACF01FD6708D001B3833 /* PlayButton.png in Resources */,
 				FE65A7E21FCBCD93002B9ACE /* icon copy.png in Resources */,
+				FE26ACF61FD671EF001B3833 /* prevButton.png in Resources */,
 				FE05CBF11FC914330028FF9C /* LaunchScreen.storyboard in Resources */,
-				FE05CC721FCA5C950028FF9C /* tenor.gif in Resources */,
 				FE65A7E01FCBCC14002B9ACE /* icon.png in Resources */,
+				FE26ACF41FD671D6001B3833 /* nextButton.png in Resources */,
 				FE05CBEE1FC914330028FF9C /* Assets.xcassets in Resources */,
 				FE05CC821FCA62D30028FF9C /* download.jpeg in Resources */,
 				FE05CC801FCA615C0028FF9C /* giphy (3).gif in Resources */,
@@ -829,6 +854,7 @@
 				FE65A7D41FCB9F13002B9ACE /* ArtistResultCell.swift in Sources */,
 				FE65A7CF1FCB9F13002B9ACE /* UserCell.swift in Sources */,
 				FE65A7D81FCBA36E002B9ACE /* CreateViewController.swift in Sources */,
+				FE26ACE11FD65AF2001B3833 /* JoinController.swift in Sources */,
 				FE65A7C21FCB9E0B002B9ACE /* AlbumViewController.swift in Sources */,
 				FE65A7AD1FCB9C9D002B9ACE /* createHomeViewController.swift in Sources */,
 				FE65A7D01FCB9F13002B9ACE /* ShareCell.swift in Sources */,

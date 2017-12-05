@@ -86,6 +86,9 @@ class WelcomeViewController: UIViewController {
         performSegue(withIdentifier: "playlistSegue", sender: self)
     }
     
+ 
+    
+    
     @IBAction func didTapLogout(_ sender: Any) {
         let alertController = UIAlertController(title: nil, message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
         let logoutAction = UIAlertAction(title: "Logout", style: .destructive) { (action) in

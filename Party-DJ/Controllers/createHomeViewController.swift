@@ -166,7 +166,7 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         
         // Set up Add to Playlist Button
         let button = UIButton()
-        button.setTitle("Add to Playlist", for: .normal)
+        button.setTitle("Search Songs", for: .normal)
         button.titleLabel?.font = UIFont(name: "HKGrotesk-SemiBold", size: 20)
         let screenWidth = self.view.frame.size.width
         button.frame = CGRect(x: (screenWidth - 219)/2, y: 10, width: 219, height: 45)
