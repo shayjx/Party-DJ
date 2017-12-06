@@ -498,65 +498,33 @@
                                 </constraints>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8Im-wg-Pop">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0Y-eB-UUk">
-                                <rect key="frame" x="236" y="615" width="32" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="Cs9-Z8-CLy"/>
-                                    <constraint firstAttribute="height" constant="32" id="cJu-2d-HBb"/>
-                                </constraints>
-                                <state key="normal" image="nextButton.png"/>
-                                <connections>
-                                    <action selector="didTapNext:" destination="Tnj-L6-IFn" eventType="touchUpInside" id="39p-Pv-7o3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-XX-aI8">
-                                <rect key="frame" x="108" y="615" width="32" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="1rg-HZ-HDM"/>
-                                    <constraint firstAttribute="width" constant="32" id="zhR-Do-62g"/>
-                                </constraints>
-                                <state key="normal" image="prevButton.png"/>
-                                <connections>
-                                    <action selector="didTapRewind:" destination="Tnj-L6-IFn" eventType="touchUpInside" id="0P1-YI-p3C"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="3" sectionFooterHeight="3" translatesAutoresizingMaskIntoConstraints="NO" id="9AI-jb-eGN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="525"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="314" sectionHeaderHeight="3" sectionFooterHeight="3" translatesAutoresizingMaskIntoConstraints="NO" id="9AI-jb-eGN">
+                                <rect key="frame" x="0.0" y="72" width="375" height="454"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="6eL-Xt-Mea">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-Ws-g7B" userLabel="nextSongImage">
-                                            <rect key="frame" x="213" y="27" width="150" height="150"/>
+                                            <rect key="frame" x="225" y="57" width="150" height="150"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="150" id="WyK-XV-Ony"/>
                                                 <constraint firstAttribute="width" constant="150" id="ipK-zz-uMJ"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Wo-oW-QRY" userLabel="previousSongImage">
-                                            <rect key="frame" x="12" y="27" width="150" height="150"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="150" id="5ib-SE-bqx"/>
-                                                <constraint firstAttribute="height" constant="150" id="yTA-ag-02u"/>
-                                            </constraints>
-                                        </imageView>
-                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-album" translatesAutoresizingMaskIntoConstraints="NO" id="OVO-yE-BQi" userLabel="currentSongImage">
-                                            <rect key="frame" x="98" y="12" width="180" height="180"/>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="48 [Converted].png" translatesAutoresizingMaskIntoConstraints="NO" id="OVO-yE-BQi" userLabel="currentSongImage">
+                                            <rect key="frame" x="72" y="27" width="214" height="211"/>
                                             <gestureRecognizers/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="180" id="dSy-5u-dm9"/>
-                                                <constraint firstAttribute="height" constant="180" id="mgb-yT-src"/>
+                                                <constraint firstAttribute="width" constant="214" id="dSy-5u-dm9"/>
+                                                <constraint firstAttribute="height" constant="211" id="mgb-yT-src"/>
                                             </constraints>
                                             <connections>
                                                 <outletCollection property="gestureRecognizers" destination="QcL-KP-PQj" appends="YES" id="S0G-CV-jUN"/>
                                             </connections>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your playlist is currently empty. Start by adding songs!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ice-io-l4e">
-                                            <rect key="frame" x="88" y="204" width="200" height="41"/>
+                                            <rect key="frame" x="86.5" y="284" width="200" height="41"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="IIw-pZ-mIX"/>
                                                 <constraint firstAttribute="height" constant="41" id="bJR-eN-2Ef"/>
@@ -566,7 +534,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zx-Z9-ecz" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                            <rect key="frame" x="146" y="200" width="83" height="21"/>
+                                            <rect key="frame" x="146" y="246" width="83" height="21"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -590,7 +558,7 @@
                                             </connections>
                                         </label>
                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFr-8J-3zA" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                            <rect key="frame" x="168" y="227" width="40" height="17"/>
+                                            <rect key="frame" x="167" y="268" width="40" height="17"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -610,24 +578,31 @@
                                                 <outletCollection property="gestureRecognizers" destination="Uzq-a5-exI" appends="YES" id="H1b-pm-wch"/>
                                             </connections>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Wo-oW-QRY" userLabel="previousSongImage">
+                                            <rect key="frame" x="0.0" y="57" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="5ib-SE-bqx"/>
+                                                <constraint firstAttribute="height" constant="150" id="yTA-ag-02u"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <gestureRecognizers/>
                                     <constraints>
                                         <constraint firstItem="GFr-8J-3zA" firstAttribute="centerX" secondItem="6eL-Xt-Mea" secondAttribute="centerX" id="Amx-FB-hV2"/>
                                         <constraint firstItem="6zx-Z9-ecz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6eL-Xt-Mea" secondAttribute="leading" constant="36" id="Iga-jv-kaP"/>
-                                        <constraint firstItem="OVO-yE-BQi" firstAttribute="top" secondItem="6eL-Xt-Mea" secondAttribute="top" constant="12" id="Ocf-pk-DfB"/>
-                                        <constraint firstItem="OVO-yE-BQi" firstAttribute="centerX" secondItem="6eL-Xt-Mea" secondAttribute="centerX" id="PMG-XT-hNw"/>
-                                        <constraint firstItem="9Wo-oW-QRY" firstAttribute="leading" secondItem="6eL-Xt-Mea" secondAttribute="leading" constant="12" id="YT0-Xw-GF4"/>
-                                        <constraint firstItem="GFr-8J-3zA" firstAttribute="top" secondItem="6zx-Z9-ecz" secondAttribute="bottom" constant="6" id="ZfD-B2-U7D"/>
+                                        <constraint firstItem="OVO-yE-BQi" firstAttribute="top" secondItem="6eL-Xt-Mea" secondAttribute="top" constant="27" id="Ocf-pk-DfB"/>
+                                        <constraint firstItem="OVO-yE-BQi" firstAttribute="centerX" secondItem="6eL-Xt-Mea" secondAttribute="centerX" constant="-8.5" id="PMG-XT-hNw"/>
+                                        <constraint firstItem="9Wo-oW-QRY" firstAttribute="leading" secondItem="6eL-Xt-Mea" secondAttribute="leading" id="YT0-Xw-GF4"/>
+                                        <constraint firstItem="GFr-8J-3zA" firstAttribute="top" secondItem="6zx-Z9-ecz" secondAttribute="bottom" constant="1" id="ZfD-B2-U7D"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GFr-8J-3zA" secondAttribute="trailing" constant="36" id="aq0-AS-hnG"/>
                                         <constraint firstItem="OVO-yE-BQi" firstAttribute="centerY" secondItem="9Wo-oW-QRY" secondAttribute="centerY" id="cmh-fK-QSs"/>
-                                        <constraint firstItem="ice-io-l4e" firstAttribute="centerX" secondItem="OVO-yE-BQi" secondAttribute="centerX" id="fLp-2P-SQk"/>
-                                        <constraint firstAttribute="trailing" secondItem="xqR-Ws-g7B" secondAttribute="trailing" constant="12" id="kGR-do-yRp"/>
+                                        <constraint firstItem="ice-io-l4e" firstAttribute="centerX" secondItem="OVO-yE-BQi" secondAttribute="centerX" constant="7.5" id="fLp-2P-SQk"/>
+                                        <constraint firstAttribute="trailing" secondItem="xqR-Ws-g7B" secondAttribute="trailing" id="kGR-do-yRp"/>
                                         <constraint firstItem="GFr-8J-3zA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6eL-Xt-Mea" secondAttribute="leading" constant="36" id="o7E-Oe-XeZ"/>
                                         <constraint firstItem="xqR-Ws-g7B" firstAttribute="centerY" secondItem="9Wo-oW-QRY" secondAttribute="centerY" id="qKj-8j-ltf"/>
                                         <constraint firstItem="6zx-Z9-ecz" firstAttribute="top" secondItem="OVO-yE-BQi" secondAttribute="bottom" constant="8" id="qNf-CK-fHb"/>
-                                        <constraint firstItem="ice-io-l4e" firstAttribute="top" secondItem="OVO-yE-BQi" secondAttribute="bottom" constant="12" id="teX-EJ-GKJ"/>
+                                        <constraint firstItem="ice-io-l4e" firstAttribute="top" secondItem="OVO-yE-BQi" secondAttribute="bottom" constant="46" id="teX-EJ-GKJ"/>
                                         <constraint firstItem="6zx-Z9-ecz" firstAttribute="centerX" secondItem="6eL-Xt-Mea" secondAttribute="centerX" id="ujA-Y4-GOd"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6zx-Z9-ecz" secondAttribute="trailing" constant="36" id="w8V-4H-iwe"/>
                                     </constraints>
@@ -636,135 +611,31 @@
                                         <outletCollection property="gestureRecognizers" destination="Cqe-dm-vB1" appends="YES" id="fE1-FL-me2"/>
                                     </connections>
                                 </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="62" id="4EA-Sp-ROW" customClass="TrackCell" customModule="Party_DJ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="257" width="375" height="62"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4EA-Sp-ROW" id="2dV-Cy-bD2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HBb-z7-3qQ">
-                                                    <rect key="frame" x="12" y="6" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="eQ0-JS-tmE"/>
-                                                        <constraint firstAttribute="width" constant="50" id="iqD-Ni-pDw"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87N-hA-XNc" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                    <rect key="frame" x="74" y="15" width="289" height="17"/>
-                                                    <fontDescription key="fontDescription" name="HKGrotesk-Medium" family="HK Grotesk" pointSize="14"/>
-                                                    <color key="textColor" red="0.98824346070000002" green="0.98822498319999996" blue="0.98823750020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
-                                                            <real key="value" value="50"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
-                                                            <real key="value" value="5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
-                                                            <real key="value" value="50"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Likes · Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIZ-Kw-Jew">
-                                                    <rect key="frame" x="74" y="34" width="289" height="14"/>
-                                                    <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="87N-hA-XNc" secondAttribute="trailing" constant="12" id="7Pu-co-41C"/>
-                                                <constraint firstItem="LIZ-Kw-Jew" firstAttribute="top" secondItem="87N-hA-XNc" secondAttribute="bottom" constant="2" id="DVm-LY-TEy"/>
-                                                <constraint firstAttribute="trailing" secondItem="LIZ-Kw-Jew" secondAttribute="trailing" constant="12" id="Dya-qp-TkB"/>
-                                                <constraint firstItem="HBb-z7-3qQ" firstAttribute="top" secondItem="87N-hA-XNc" secondAttribute="bottom" constant="-26" id="E3g-Sa-jBM"/>
-                                                <constraint firstItem="LIZ-Kw-Jew" firstAttribute="leading" secondItem="HBb-z7-3qQ" secondAttribute="trailing" constant="12" id="MLd-yo-Y0r"/>
-                                                <constraint firstItem="HBb-z7-3qQ" firstAttribute="leading" secondItem="2dV-Cy-bD2" secondAttribute="leading" constant="12" id="aCr-2Q-9ns"/>
-                                                <constraint firstAttribute="bottom" secondItem="HBb-z7-3qQ" secondAttribute="bottom" constant="6" id="dXy-kd-hmP"/>
-                                                <constraint firstItem="HBb-z7-3qQ" firstAttribute="top" secondItem="2dV-Cy-bD2" secondAttribute="top" constant="6" id="dz2-ge-YWp"/>
-                                                <constraint firstItem="87N-hA-XNc" firstAttribute="leading" secondItem="HBb-z7-3qQ" secondAttribute="trailing" constant="12" id="rU4-by-3z6"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="albumImage" destination="HBb-z7-3qQ" id="dBe-vQ-pEO"/>
-                                            <outlet property="artistsLabel" destination="LIZ-Kw-Jew" id="ik2-02-2Ht"/>
-                                            <outlet property="songLabel" destination="87N-hA-XNc" id="JxL-0o-By4"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grq-f3-CgK">
-                                <rect key="frame" x="164" y="607" width="48" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="48" id="aNV-K3-r1t"/>
-                                    <constraint firstAttribute="height" constant="48" id="uKy-gK-RXM"/>
-                                </constraints>
-                                <state key="normal" image="PlayButton.png"/>
-                                <state key="selected" image="pause-button"/>
-                                <connections>
-                                    <action selector="didTapPlayPause:" destination="Tnj-L6-IFn" eventType="touchUpInside" id="Lha-ww-XRn"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsK-Sm-iCy">
-                                <rect key="frame" x="12" y="598" width="31" height="14"/>
-                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ixe-bb-OJB">
-                                <rect key="frame" x="12" y="593" width="351" height="2"/>
-                            </progressView>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6O-vf-bYX">
-                                <rect key="frame" x="332" y="598" width="31" height="14"/>
-                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ixe-bb-OJB" secondAttribute="trailing" constant="12" id="1Sg-lJ-nCs"/>
-                            <constraint firstItem="8Im-wg-Pop" firstAttribute="top" secondItem="hUt-EC-YlY" secondAttribute="top" id="2ub-R8-2J6"/>
-                            <constraint firstItem="R6O-vf-bYX" firstAttribute="top" secondItem="Ixe-bb-OJB" secondAttribute="bottom" constant="3" id="4Vx-ne-c9b"/>
-                            <constraint firstItem="8Im-wg-Pop" firstAttribute="trailing" secondItem="9AI-jb-eGN" secondAttribute="trailing" id="6QO-2H-AFb"/>
                             <constraint firstAttribute="trailing" secondItem="IsF-I4-1u6" secondAttribute="trailing" id="6nZ-vo-C4F"/>
-                            <constraint firstItem="rsK-Sm-iCy" firstAttribute="leading" secondItem="Ixe-bb-OJB" secondAttribute="leading" id="6nb-hy-2So"/>
                             <constraint firstItem="9AI-jb-eGN" firstAttribute="top" secondItem="m39-wh-sro" secondAttribute="bottom" id="7FJ-6a-4Rn"/>
                             <constraint firstItem="DvC-CB-Pon" firstAttribute="leading" secondItem="hzb-1a-teU" secondAttribute="leading" id="AxT-J8-uXG"/>
                             <constraint firstItem="9AI-jb-eGN" firstAttribute="leading" secondItem="hzb-1a-teU" secondAttribute="leading" id="CQW-Rm-P0X"/>
-                            <constraint firstItem="U0Y-eB-UUk" firstAttribute="top" secondItem="Grq-f3-CgK" secondAttribute="bottom" constant="-40" id="Gid-Vq-UWN"/>
-                            <constraint firstItem="R6O-vf-bYX" firstAttribute="trailing" secondItem="Ixe-bb-OJB" secondAttribute="trailing" id="KA0-6h-9Tq"/>
                             <constraint firstItem="hUt-EC-YlY" firstAttribute="top" secondItem="hzb-1a-teU" secondAttribute="top" id="MRc-hI-NBR"/>
-                            <constraint firstItem="Grq-f3-CgK" firstAttribute="top" secondItem="Ixe-bb-OJB" secondAttribute="bottom" constant="12" id="NIA-5f-VfQ"/>
                             <constraint firstItem="V1T-nI-WRC" firstAttribute="top" secondItem="hzb-1a-teU" secondAttribute="top" id="Nrd-9X-Ru1"/>
                             <constraint firstItem="V1T-nI-WRC" firstAttribute="leading" secondItem="hzb-1a-teU" secondAttribute="leading" id="S9e-uK-i3e"/>
-                            <constraint firstItem="U0Y-eB-UUk" firstAttribute="leading" secondItem="Grq-f3-CgK" secondAttribute="trailing" constant="24" id="Tth-8w-5Bf"/>
                             <constraint firstAttribute="trailing" secondItem="hUt-EC-YlY" secondAttribute="trailing" id="TvA-f2-bE7"/>
                             <constraint firstItem="W6K-mh-HhB" firstAttribute="top" secondItem="hzb-1a-teU" secondAttribute="top" id="UdM-Fx-lz6"/>
                             <constraint firstItem="E22-D7-Z2n" firstAttribute="top" secondItem="DvC-CB-Pon" secondAttribute="bottom" id="Vl9-bI-BAU"/>
-                            <constraint firstItem="9AI-jb-eGN" firstAttribute="bottom" secondItem="Ixe-bb-OJB" secondAttribute="bottom" constant="-6" id="Wle-qh-Zuk"/>
                             <constraint firstItem="IsF-I4-1u6" firstAttribute="leading" secondItem="hzb-1a-teU" secondAttribute="leading" id="ZBR-Oi-a8Z"/>
                             <constraint firstAttribute="trailing" secondItem="DvC-CB-Pon" secondAttribute="trailing" id="ZD7-Hy-pPS"/>
-                            <constraint firstItem="Ixe-bb-OJB" firstAttribute="leading" secondItem="hzb-1a-teU" secondAttribute="leading" constant="12" id="bj8-tN-kWr"/>
                             <constraint firstItem="hUt-EC-YlY" firstAttribute="leading" secondItem="hzb-1a-teU" secondAttribute="leading" id="dcP-n8-QxP"/>
                             <constraint firstItem="E22-D7-Z2n" firstAttribute="top" secondItem="IsF-I4-1u6" secondAttribute="bottom" id="eWL-NO-wdS"/>
                             <constraint firstAttribute="trailing" secondItem="eLs-3r-aVd" secondAttribute="trailing" id="eaU-L9-Ab7"/>
-                            <constraint firstItem="rsK-Sm-iCy" firstAttribute="top" secondItem="Ixe-bb-OJB" secondAttribute="bottom" constant="3" id="fBk-v3-snW"/>
                             <constraint firstAttribute="trailing" secondItem="V1T-nI-WRC" secondAttribute="trailing" id="g81-xc-60u"/>
                             <constraint firstAttribute="bottom" secondItem="eLs-3r-aVd" secondAttribute="bottom" constant="-50" id="hr5-7A-gwz"/>
                             <constraint firstItem="eLs-3r-aVd" firstAttribute="leading" secondItem="hzb-1a-teU" secondAttribute="leading" id="i2h-kX-pKc"/>
-                            <constraint firstItem="8Im-wg-Pop" firstAttribute="leading" secondItem="DvC-CB-Pon" secondAttribute="leading" id="k8Y-tN-GVK"/>
-                            <constraint firstItem="8Im-wg-Pop" firstAttribute="bottom" secondItem="E22-D7-Z2n" secondAttribute="top" id="kNI-Ca-iti"/>
-                            <constraint firstItem="E22-D7-Z2n" firstAttribute="top" secondItem="Grq-f3-CgK" secondAttribute="bottom" constant="12" id="lI6-bT-AY0"/>
-                            <constraint firstItem="Grq-f3-CgK" firstAttribute="leading" secondItem="fdb-XX-aI8" secondAttribute="trailing" constant="24" id="lts-Po-2mt"/>
-                            <constraint firstItem="Grq-f3-CgK" firstAttribute="centerX" secondItem="hzb-1a-teU" secondAttribute="centerX" id="mNJ-dl-JQz"/>
                             <constraint firstAttribute="trailing" secondItem="W6K-mh-HhB" secondAttribute="trailing" id="nlZ-T8-Ei8"/>
                             <constraint firstItem="W6K-mh-HhB" firstAttribute="leading" secondItem="hzb-1a-teU" secondAttribute="leading" id="oAS-c2-DYb"/>
-                            <constraint firstItem="fdb-XX-aI8" firstAttribute="top" secondItem="Grq-f3-CgK" secondAttribute="bottom" constant="-40" id="qDj-04-xbi"/>
                             <constraint firstAttribute="trailing" secondItem="9AI-jb-eGN" secondAttribute="trailing" id="sFQ-bQ-1op"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0PH-x6-FGC"/>
@@ -839,6 +710,156 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1132" y="-1524.2878560719641"/>
+        </scene>
+        <!--HomePlayingController-->
+        <scene sceneID="acb-Mo-EdP">
+            <objects>
+                <viewController title="HomePlayingController" id="D4A-Qd-p1f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h8c-xo-twW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x6G-2U-E6m">
+                                <rect key="frame" x="0.0" y="-12" width="375" height="679"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Z2-Nt-zdM" userLabel="previousSongImage">
+                                <rect key="frame" x="0.0" y="84" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="KZb-0C-ZzI"/>
+                                    <constraint firstAttribute="width" constant="150" id="pXl-wK-KKb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8y-JK-WGx" userLabel="nextSongImage">
+                                <rect key="frame" x="225" y="84" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="f2q-uo-uym"/>
+                                    <constraint firstAttribute="width" constant="150" id="sDy-PP-fjg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="48 [Converted].png" translatesAutoresizingMaskIntoConstraints="NO" id="V7M-BF-tYn" userLabel="currentSongImage">
+                                <rect key="frame" x="80" y="66" width="214" height="211"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="VSw-FO-K2k"/>
+                                    <constraint firstAttribute="height" constant="211" id="gF5-FR-ALS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your playlist is currently empty. Start by adding songs!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-D1-Xy5">
+                                <rect key="frame" x="87" y="357" width="200" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QUK-b8-6lJ"/>
+                                    <constraint firstAttribute="height" constant="41" id="dm8-3U-Nev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uks-0V-baP" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="146" y="303" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grq-f3-CgK">
+                                <rect key="frame" x="163" y="476" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="aNV-K3-r1t"/>
+                                    <constraint firstAttribute="height" constant="48" id="uKy-gK-RXM"/>
+                                </constraints>
+                                <state key="normal" image="PlayButton.png"/>
+                                <state key="selected" image="pause-button"/>
+                                <connections>
+                                    <action selector="didTapPlayPause:" destination="Tnj-L6-IFn" eventType="touchUpInside" id="Lha-ww-XRn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0Y-eB-UUk">
+                                <rect key="frame" x="238" y="484" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Cs9-Z8-CLy"/>
+                                    <constraint firstAttribute="height" constant="32" id="cJu-2d-HBb"/>
+                                </constraints>
+                                <state key="normal" image="nextButton.png"/>
+                                <connections>
+                                    <action selector="didTapNext:" destination="Tnj-L6-IFn" eventType="touchUpInside" id="39p-Pv-7o3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-XX-aI8">
+                                <rect key="frame" x="106" y="484" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="1rg-HZ-HDM"/>
+                                    <constraint firstAttribute="width" constant="32" id="zhR-Do-62g"/>
+                                </constraints>
+                                <state key="normal" image="prevButton.png"/>
+                                <connections>
+                                    <action selector="didTapRewind:" destination="Tnj-L6-IFn" eventType="touchUpInside" id="0P1-YI-p3C"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ixe-bb-OJB">
+                                <rect key="frame" x="12" y="332" width="351" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.055858602719999997" green="0.068146858810000002" blue="0.01262273821" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsK-Sm-iCy">
+                                <rect key="frame" x="16" y="461" width="31" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6O-vf-bYX">
+                                <rect key="frame" x="338" y="461" width="31" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVe-O6-5R5" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="171" y="342" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Grq-f3-CgK" firstAttribute="centerX" secondItem="h8c-xo-twW" secondAttribute="centerX" id="8xe-Mk-IZD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zKj-nc-bOV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGn-AN-JCx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2070" y="-1313"/>
         </scene>
         <!--YourPlaylistController-->
         <scene sceneID="lEd-EQ-s7h">
@@ -1239,7 +1260,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a68-y2-7ge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="-1524"/>
+            <point key="canvasLocation" x="420" y="-1534"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MBl-9d-QSp">
@@ -1259,8 +1280,443 @@
             </objects>
             <point key="canvasLocation" x="1132" y="-770"/>
         </scene>
+        <!--CreateController2-->
+        <scene sceneID="S1V-cH-fKb">
+            <objects>
+                <viewController title="CreateController2" id="1SU-0f-Bu9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eig-oY-V6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="xt2-sR-fvQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vUC-9d-Zel">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:OGh-Nf-Bio:image" translatesAutoresizingMaskIntoConstraints="NO" id="OGh-Nf-Bio">
+                                <rect key="frame" x="0.0" y="651" width="375" height="16"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:bsE-6q-MvT:image" translatesAutoresizingMaskIntoConstraints="NO" id="bsE-6q-MvT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="379"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="379" id="rON-Ry-eer"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YRC-74-sVW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="367"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="367" id="e2i-Gf-lyz"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBo-CF-96E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KEn-hV-dcU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANs-q2-YLD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oPe-UF-a7V">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="353" id="EVF-lh-OkE"/>
+                                            </constraints>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ANs-q2-YLD" firstAttribute="top" secondItem="KEn-hV-dcU" secondAttribute="top" id="ajn-u4-ra4"/>
+                                        <constraint firstItem="ANs-q2-YLD" firstAttribute="leading" secondItem="KEn-hV-dcU" secondAttribute="leading" id="uvy-kU-KI7"/>
+                                        <constraint firstAttribute="trailing" secondItem="ANs-q2-YLD" secondAttribute="trailing" id="w9z-UE-SHT"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="353" id="EcM-rp-egJ"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-LD-f9h">
+                                <rect key="frame" x="0.0" y="534" width="375" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="1KW-hl-Pft"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbk-hN-ZrO">
+                                <rect key="frame" x="0.0" y="537" width="375" height="130"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Vv8-cn-qKE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-3p-rP6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wcj-c8-msh">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="130" id="Zb0-hE-qzS"/>
+                                            </constraints>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="2Ty-3p-rP6" secondAttribute="trailing" id="MPt-WU-6hP"/>
+                                        <constraint firstItem="2Ty-3p-rP6" firstAttribute="leading" secondItem="Vv8-cn-qKE" secondAttribute="leading" id="gEu-Bp-7VD"/>
+                                        <constraint firstAttribute="bottom" secondItem="2Ty-3p-rP6" secondAttribute="bottom" id="zCF-WY-WGc"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="HMa-zw-5jC"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QHv-zA-r1Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xh-hF-Hbz">
+                                <rect key="frame" x="236" y="615" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="2Yu-7e-lXq"/>
+                                    <constraint firstAttribute="height" constant="32" id="TJO-UN-2tq"/>
+                                </constraints>
+                                <state key="normal" image="nextButton.png"/>
+                                <connections>
+                                    <action selector="didTapNext:" destination="1SU-0f-Bu9" eventType="touchUpInside" id="h0V-cp-Dfp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaS-3g-KyA">
+                                <rect key="frame" x="108" y="615" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="9aU-cr-fzW"/>
+                                    <constraint firstAttribute="height" constant="32" id="PRG-bg-LhB"/>
+                                </constraints>
+                                <state key="normal" image="prevButton.png"/>
+                                <connections>
+                                    <action selector="didTapRewind:" destination="1SU-0f-Bu9" eventType="touchUpInside" id="dxP-O5-6s3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sec-QT-pbV">
+                                <rect key="frame" x="164" y="607" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="MGa-zF-j3W"/>
+                                    <constraint firstAttribute="height" constant="48" id="mif-J4-9RB"/>
+                                </constraints>
+                                <state key="normal" image="PlayButton.png"/>
+                                <state key="selected" image="pause-button"/>
+                                <connections>
+                                    <action selector="didTapPlayPause:" destination="1SU-0f-Bu9" eventType="touchUpInside" id="Sbf-0J-I9c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RG-pO-SEz">
+                                <rect key="frame" x="12" y="598" width="31" height="14"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mmD-D4-JOu">
+                                <rect key="frame" x="12" y="593" width="351" height="2"/>
+                                <color key="progressTintColor" red="0.055858602719999997" green="0.068146858810000002" blue="0.01262273821" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqX-2O-UNR">
+                                <rect key="frame" x="332" y="598" width="31" height="14"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="332" sectionHeaderHeight="3" sectionFooterHeight="3" translatesAutoresizingMaskIntoConstraints="NO" id="UPm-KS-HoT">
+                                <rect key="frame" x="0.0" y="72" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="zZf-uv-6AS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="383"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JZ6-fl-YAn" userLabel="nextSongImage">
+                                            <rect key="frame" x="225" y="57" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="XS7-wJ-y97"/>
+                                                <constraint firstAttribute="height" constant="150" id="cun-gC-Y31"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="48 [Converted].png" translatesAutoresizingMaskIntoConstraints="NO" id="ONO-ZL-eho" userLabel="currentSongImage">
+                                            <rect key="frame" x="72" y="27" width="214" height="211"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="214" id="2uo-4a-Qsk"/>
+                                                <constraint firstAttribute="height" constant="211" id="Mh9-fe-XxH"/>
+                                            </constraints>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="O5l-cX-Dgc" appends="YES" id="YWt-Mm-DtK"/>
+                                            </connections>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your playlist is currently empty. Start by adding songs!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2q-Hx-Eh8">
+                                            <rect key="frame" x="86.5" y="284" width="200" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="41" id="JKc-AU-Aw7"/>
+                                                <constraint firstAttribute="width" constant="200" id="eGx-IF-ICK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvu-Km-zx4" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                            <rect key="frame" x="146" y="246" width="83" height="21"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                    <real key="value" value="50"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                                    <real key="value" value="50"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="Vy4-6e-2cs" appends="YES" id="kLX-UW-mix"/>
+                                            </connections>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sll-Mj-plr" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                            <rect key="frame" x="167" y="268" width="40" height="17"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="ORW-T8-kXR" appends="YES" id="9FO-cm-2JA"/>
+                                            </connections>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C1Z-Dr-KW6" userLabel="previousSongImage">
+                                            <rect key="frame" x="0.0" y="57" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="5IU-86-TkN"/>
+                                                <constraint firstAttribute="height" constant="150" id="L5T-JK-6et"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="ONO-ZL-eho" firstAttribute="centerX" secondItem="zZf-uv-6AS" secondAttribute="centerX" constant="-8.5" id="0Df-c6-Jvv"/>
+                                        <constraint firstItem="sll-Mj-plr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zZf-uv-6AS" secondAttribute="leading" constant="36" id="2I2-PG-OMm"/>
+                                        <constraint firstItem="yvu-Km-zx4" firstAttribute="top" secondItem="ONO-ZL-eho" secondAttribute="bottom" constant="8" id="EYc-Qr-wlw"/>
+                                        <constraint firstItem="sll-Mj-plr" firstAttribute="centerX" secondItem="zZf-uv-6AS" secondAttribute="centerX" id="GzV-Lu-twd"/>
+                                        <constraint firstItem="yvu-Km-zx4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zZf-uv-6AS" secondAttribute="leading" constant="36" id="IBP-wR-bKd"/>
+                                        <constraint firstAttribute="trailing" secondItem="JZ6-fl-YAn" secondAttribute="trailing" id="L11-9V-M3l"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yvu-Km-zx4" secondAttribute="trailing" constant="36" id="UzT-HS-uIa"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sll-Mj-plr" secondAttribute="trailing" constant="36" id="Vy4-5k-XZL"/>
+                                        <constraint firstItem="C1Z-Dr-KW6" firstAttribute="leading" secondItem="zZf-uv-6AS" secondAttribute="leading" id="cJ0-el-Ne3"/>
+                                        <constraint firstItem="ONO-ZL-eho" firstAttribute="top" secondItem="zZf-uv-6AS" secondAttribute="top" constant="27" id="f5B-cL-B0Z"/>
+                                        <constraint firstItem="JZ6-fl-YAn" firstAttribute="centerY" secondItem="C1Z-Dr-KW6" secondAttribute="centerY" id="g3G-ST-UbN"/>
+                                        <constraint firstItem="yvu-Km-zx4" firstAttribute="centerX" secondItem="zZf-uv-6AS" secondAttribute="centerX" id="hPA-2g-WUO"/>
+                                        <constraint firstItem="sll-Mj-plr" firstAttribute="top" secondItem="yvu-Km-zx4" secondAttribute="bottom" constant="1" id="j7z-aR-k6V"/>
+                                        <constraint firstItem="ONO-ZL-eho" firstAttribute="centerY" secondItem="C1Z-Dr-KW6" secondAttribute="centerY" id="jzT-BX-1ni"/>
+                                        <constraint firstItem="K2q-Hx-Eh8" firstAttribute="top" secondItem="ONO-ZL-eho" secondAttribute="bottom" constant="46" id="nj1-Lv-jNm"/>
+                                        <constraint firstItem="K2q-Hx-Eh8" firstAttribute="centerX" secondItem="ONO-ZL-eho" secondAttribute="centerX" constant="7.5" id="sL2-qF-Ydp"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="jSk-OT-e5B" appends="YES" id="vnz-ao-kAu"/>
+                                        <outletCollection property="gestureRecognizers" destination="FFl-L0-54T" appends="YES" id="Qex-cL-X5O"/>
+                                    </connections>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="332" id="xti-t7-SAa" customClass="TrackCell" customModule="Party_DJ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="386" width="375" height="332"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="xti-t7-SAa" id="JNc-rT-cRi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="331.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qCt-p4-ANf">
+                                                    <rect key="frame" x="15" y="18" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="GMM-49-M2k"/>
+                                                        <constraint firstAttribute="height" constant="50" id="nhC-B7-D5L"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOk-Ad-V7H" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                    <rect key="frame" x="74" y="18" width="289" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HKGrotesk-Medium" family="HK Grotesk" pointSize="14"/>
+                                                    <color key="textColor" red="0.98824346070000002" green="0.98822498319999996" blue="0.98823750020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 Likes · Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1T-ws-Y14">
+                                                    <rect key="frame" x="74" y="43" width="289" height="14"/>
+                                                    <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SOk-Ad-V7H" firstAttribute="leading" secondItem="qCt-p4-ANf" secondAttribute="trailing" constant="9" id="2Mf-e7-eAY"/>
+                                                <constraint firstItem="qCt-p4-ANf" firstAttribute="top" secondItem="SOk-Ad-V7H" secondAttribute="bottom" constant="-17" id="7cE-TQ-ePp"/>
+                                                <constraint firstItem="c1T-ws-Y14" firstAttribute="top" secondItem="SOk-Ad-V7H" secondAttribute="bottom" constant="8" id="BhW-Vn-ZMt"/>
+                                                <constraint firstAttribute="bottom" secondItem="qCt-p4-ANf" secondAttribute="bottom" constant="216.5" id="EDP-yi-r63"/>
+                                                <constraint firstAttribute="trailing" secondItem="c1T-ws-Y14" secondAttribute="trailing" constant="12" id="HTO-1V-eff"/>
+                                                <constraint firstItem="qCt-p4-ANf" firstAttribute="top" secondItem="JNc-rT-cRi" secondAttribute="top" constant="18" id="LN2-wY-hWR"/>
+                                                <constraint firstItem="qCt-p4-ANf" firstAttribute="leading" secondItem="JNc-rT-cRi" secondAttribute="leading" constant="15" id="XSr-e7-RvU"/>
+                                                <constraint firstAttribute="trailing" secondItem="SOk-Ad-V7H" secondAttribute="trailing" constant="12" id="ixn-e4-nw9"/>
+                                                <constraint firstItem="c1T-ws-Y14" firstAttribute="leading" secondItem="qCt-p4-ANf" secondAttribute="trailing" constant="9" id="o5r-JC-3X5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="albumImage" destination="qCt-p4-ANf" id="pTC-VK-QbH"/>
+                                            <outlet property="artistsLabel" destination="c1T-ws-Y14" id="xo4-nK-n52"/>
+                                            <outlet property="songLabel" destination="SOk-Ad-V7H" id="kqg-82-4XW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="XaS-3g-KyA" firstAttribute="top" secondItem="sec-QT-pbV" secondAttribute="bottom" constant="-40" id="3hk-z9-E0K"/>
+                            <constraint firstItem="WqX-2O-UNR" firstAttribute="trailing" secondItem="mmD-D4-JOu" secondAttribute="trailing" id="7BV-9j-eef"/>
+                            <constraint firstItem="bsE-6q-MvT" firstAttribute="leading" secondItem="vUC-9d-Zel" secondAttribute="leading" id="8HO-Eq-BTb"/>
+                            <constraint firstItem="0RG-pO-SEz" firstAttribute="leading" secondItem="mmD-D4-JOu" secondAttribute="leading" id="9hW-jV-Lal"/>
+                            <constraint firstItem="QHv-zA-r1Y" firstAttribute="top" secondItem="tBo-CF-96E" secondAttribute="top" id="A2U-U1-w7K"/>
+                            <constraint firstItem="xt2-sR-fvQ" firstAttribute="top" secondItem="OGh-Nf-Bio" secondAttribute="bottom" id="BIh-KJ-xNN"/>
+                            <constraint firstItem="UPm-KS-HoT" firstAttribute="leading" secondItem="vUC-9d-Zel" secondAttribute="leading" id="Bah-CY-KhW"/>
+                            <constraint firstItem="sec-QT-pbV" firstAttribute="top" secondItem="mmD-D4-JOu" secondAttribute="bottom" constant="12" id="DWm-cZ-Gvo"/>
+                            <constraint firstItem="UPm-KS-HoT" firstAttribute="top" secondItem="Eig-oY-V6x" secondAttribute="bottom" id="DWx-eu-uJU"/>
+                            <constraint firstItem="tBo-CF-96E" firstAttribute="top" secondItem="vUC-9d-Zel" secondAttribute="top" id="DdD-HL-5Q3"/>
+                            <constraint firstItem="YRC-74-sVW" firstAttribute="leading" secondItem="vUC-9d-Zel" secondAttribute="leading" id="E2s-Ad-7Ob"/>
+                            <constraint firstItem="QHv-zA-r1Y" firstAttribute="trailing" secondItem="UPm-KS-HoT" secondAttribute="trailing" id="GAx-Vk-sGL"/>
+                            <constraint firstItem="mmD-D4-JOu" firstAttribute="leading" secondItem="vUC-9d-Zel" secondAttribute="leading" constant="12" id="HXc-DI-FvI"/>
+                            <constraint firstAttribute="trailing" secondItem="OGh-Nf-Bio" secondAttribute="trailing" id="HiG-dd-2JA"/>
+                            <constraint firstItem="sec-QT-pbV" firstAttribute="centerX" secondItem="vUC-9d-Zel" secondAttribute="centerX" id="LN1-up-OzN"/>
+                            <constraint firstItem="QHv-zA-r1Y" firstAttribute="bottom" secondItem="xt2-sR-fvQ" secondAttribute="top" id="M5E-f3-kxz"/>
+                            <constraint firstItem="sec-QT-pbV" firstAttribute="leading" secondItem="XaS-3g-KyA" secondAttribute="trailing" constant="24" id="PPP-42-bb0"/>
+                            <constraint firstItem="UPm-KS-HoT" firstAttribute="bottom" secondItem="mmD-D4-JOu" secondAttribute="bottom" constant="-6" id="QBr-k9-VuO"/>
+                            <constraint firstItem="4eB-LD-f9h" firstAttribute="leading" secondItem="vUC-9d-Zel" secondAttribute="leading" id="Qu4-bK-PjZ"/>
+                            <constraint firstItem="4xh-hF-Hbz" firstAttribute="leading" secondItem="sec-QT-pbV" secondAttribute="trailing" constant="24" id="RL2-Ku-8eV"/>
+                            <constraint firstItem="xt2-sR-fvQ" firstAttribute="top" secondItem="sec-QT-pbV" secondAttribute="bottom" constant="12" id="VWc-Nn-z4B"/>
+                            <constraint firstItem="xt2-sR-fvQ" firstAttribute="top" secondItem="tbk-hN-ZrO" secondAttribute="bottom" id="W0g-OY-8Oi"/>
+                            <constraint firstItem="0RG-pO-SEz" firstAttribute="top" secondItem="mmD-D4-JOu" secondAttribute="bottom" constant="3" id="Wa0-i9-6C9"/>
+                            <constraint firstItem="YRC-74-sVW" firstAttribute="top" secondItem="vUC-9d-Zel" secondAttribute="top" id="Xob-gR-XW8"/>
+                            <constraint firstAttribute="trailing" secondItem="4eB-LD-f9h" secondAttribute="trailing" id="YNh-eJ-Wwa"/>
+                            <constraint firstAttribute="trailing" secondItem="mmD-D4-JOu" secondAttribute="trailing" constant="12" id="axA-xd-ehF"/>
+                            <constraint firstItem="WqX-2O-UNR" firstAttribute="top" secondItem="mmD-D4-JOu" secondAttribute="bottom" constant="3" id="bsS-HK-UDX"/>
+                            <constraint firstItem="QHv-zA-r1Y" firstAttribute="leading" secondItem="OGh-Nf-Bio" secondAttribute="leading" id="dlQ-ll-xta"/>
+                            <constraint firstAttribute="trailing" secondItem="UPm-KS-HoT" secondAttribute="trailing" id="fpy-W3-0dR"/>
+                            <constraint firstItem="bsE-6q-MvT" firstAttribute="top" secondItem="vUC-9d-Zel" secondAttribute="top" id="iIR-8s-jFO"/>
+                            <constraint firstItem="OGh-Nf-Bio" firstAttribute="leading" secondItem="vUC-9d-Zel" secondAttribute="leading" id="jwp-7S-wnJ"/>
+                            <constraint firstAttribute="trailing" secondItem="tbk-hN-ZrO" secondAttribute="trailing" id="n14-mj-1hf"/>
+                            <constraint firstItem="4xh-hF-Hbz" firstAttribute="top" secondItem="sec-QT-pbV" secondAttribute="bottom" constant="-40" id="sYU-Kl-mXR"/>
+                            <constraint firstAttribute="trailing" secondItem="YRC-74-sVW" secondAttribute="trailing" id="tMp-UO-VPJ"/>
+                            <constraint firstItem="tbk-hN-ZrO" firstAttribute="leading" secondItem="vUC-9d-Zel" secondAttribute="leading" id="u1g-pp-nSl"/>
+                            <constraint firstAttribute="trailing" secondItem="bsE-6q-MvT" secondAttribute="trailing" id="vM5-TC-cyX"/>
+                            <constraint firstAttribute="trailing" secondItem="tBo-CF-96E" secondAttribute="trailing" id="wet-gP-g4o"/>
+                            <constraint firstAttribute="bottom" secondItem="4eB-LD-f9h" secondAttribute="bottom" constant="-50" id="wmm-eF-Kxs"/>
+                            <constraint firstItem="tBo-CF-96E" firstAttribute="leading" secondItem="vUC-9d-Zel" secondAttribute="leading" id="z9m-Qd-dUI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RTY-NU-Oel"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6zI-HB-NNm" appends="YES" id="jku-Kr-vKA"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="kjr-Zu-6uH">
+                        <barButtonItem key="leftBarButtonItem" image="logout" id="jfF-00-IO2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onTapLeave:" destination="1SU-0f-Bu9" id="MKd-B2-VD0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="user-plus" id="rDx-vx-uDa">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="artistsLabel" destination="sll-Mj-plr" id="RVK-3i-RIP"/>
+                        <outlet property="bg" destination="YRC-74-sVW" id="X1Q-o4-WRu"/>
+                        <outlet property="currentSongImageView" destination="ONO-ZL-eho" id="yu4-nb-ik8"/>
+                        <outlet property="instructionsLabel" destination="K2q-Hx-Eh8" id="HnV-Sj-hhC"/>
+                        <outlet property="nextButton" destination="4xh-hF-Hbz" id="2Qk-0t-f4O"/>
+                        <outlet property="nextSongImageView" destination="JZ6-fl-YAn" id="QSc-tK-T9g"/>
+                        <outlet property="playButton" destination="sec-QT-pbV" id="puP-qx-gne"/>
+                        <outlet property="playControlsGradientImageView" destination="OGh-Nf-Bio" id="5as-B6-yep"/>
+                        <outlet property="previousSongImageView" destination="C1Z-Dr-KW6" id="p7w-jy-V0G"/>
+                        <outlet property="progressBar" destination="mmD-D4-JOu" id="MgF-Gl-bxb"/>
+                        <outlet property="rewindButton" destination="XaS-3g-KyA" id="Bb4-vG-fRl"/>
+                        <outlet property="secondbg" destination="4eB-LD-f9h" id="q1v-1P-g77"/>
+                        <outlet property="startTimer" destination="0RG-pO-SEz" id="k2l-wx-mGS"/>
+                        <outlet property="tableView" destination="UPm-KS-HoT" id="JEv-yX-A84"/>
+                        <outlet property="timerLabel" destination="WqX-2O-UNR" id="hrg-9L-Gfe"/>
+                        <outlet property="trackTitleLabel" destination="yvu-Km-zx4" id="0T8-s2-xl1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7y-bm-khF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="6zI-HB-NNm">
+                    <connections>
+                        <action selector="screenTapped:" destination="1SU-0f-Bu9" id="ChR-RU-OkR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="left" id="jSk-OT-e5B">
+                    <connections>
+                        <action selector="swipeLeftWithSender:" destination="1SU-0f-Bu9" id="iN6-DN-Xab"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="right" id="FFl-L0-54T">
+                    <connections>
+                        <action selector="swipeRightWithSender:" destination="1SU-0f-Bu9" id="Ycg-Oe-Moh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="O5l-cX-Dgc">
+                    <connections>
+                        <action selector="didTapMainAlbumCover:" destination="1SU-0f-Bu9" id="lZK-kp-g9E"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Vy4-6e-2cs">
+                    <connections>
+                        <action selector="didTapTrackTitle:" destination="1SU-0f-Bu9" id="Ekf-5n-OXr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ORW-T8-kXR">
+                    <connections>
+                        <action selector="didTapArtistsLabel:" destination="1SU-0f-Bu9" id="dR5-ev-Ogr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2263" y="-1937"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="48 [Converted].png" width="308" height="309"/>
         <image name="PlayButton.png" width="184" height="184"/>
         <image name="background.jpg" width="3300" height="5100"/>
         <image name="chevron-right" width="16" height="16"/>
@@ -1361,7 +1817,193 @@ vADIAMoAzADOAUQBSQFUAV0BYwFmAW8BdAF8AX8BigGSAZ8BrAHBAcYBygHMAc4B0AHZAd4B5AHsAe4B
 AABUAAAAAAAAAAAAAAAAAAAT6w
 </mutableData>
         </image>
+        <image name="imageView:OGh-Nf-Bio:image" width="16" height="16">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGUFFYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEAcI
+ERYbHCIjKSw2PkJGSk1VJG51bGzUCQoLDA0ODxBWJGNsYXNzXE5TSW1hZ2VGbGFnc1ZOU1JlcHNXTlND
+b2xvcoAPEgTAAACAAoAJ0hIJExVaTlMub2JqZWN0c6EUgAOACNISCRcVohgZgASABYAIEAXTHQkeHyAh
+V05TLmJhc2VbTlMucmVsYXRpdmWAAIAHgAZfEHNmaWxlOi8vL0FwcGxpY2F0aW9ucy9YY29kZS5hcHAv
+Q29udGVudHMvUGx1Z0lucy9JREVJbnRlcmZhY2VCdWlsZGVyS2l0LmZyYW1ld29yay9SZXNvdXJjZXMv
+SUJNaXNzaW5nSW1hZ2VHbHlwaC50aWZm0iQlJidaJGNsYXNzbmFtZVgkY2xhc3Nlc1VOU1VSTKImKFhO
+U09iamVjdNIkJSorV05TQXJyYXmiKijVLS4vMAkxMjM0NVdOU1doaXRlXE5TQ29tcG9uZW50c1xOU0Nv
+bG9yU3BhY2VfEBJOU0N1c3RvbUNvbG9yU3BhY2VEMCAwAEMwIDAQA4AKgA7UNzg5CTo7PD1UTlNJRFVO
+U0lDQ1dOU01vZGVsEAmACxAAgA3SPwlAQVdOUy5kYXRhTxERaAAAEWhhcHBsAgAAAG1udHJHUkFZWFla
+IAfcAAgAFwAPAC4AD2Fjc3BBUFBMAAAAAG5vbmUAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBw
+bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWRlc2MAAADAAAAA
+eWRzY20AAAE8AAAH6GNwcnQAAAkkAAAAI3d0cHQAAAlIAAAAFGtUUkMAAAlcAAAIDGRlc2MAAAAAAAAA
+H0dlbmVyaWMgR3JheSBHYW1tYSAyLjIgUHJvZmlsZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAA
+AAAAAB8AAAAMc2tTSwAAAC4AAAGEZGFESwAAADgAAAGyY2FFUwAAADgAAAHqdmlWTgAAAEAAAAIicHRC
+UgAAAEoAAAJidWtVQQAAACwAAAKsZnJGVQAAAD4AAALYaHVIVQAAADQAAAMWemhUVwAAAB4AAANKbmJO
+TwAAADoAAANoY3NDWgAAACgAAAOiaGVJTAAAACQAAAPKaXRJVAAAAE4AAAPucm9STwAAACoAAAQ8ZGVE
+RQAAAE4AAARma29LUgAAACIAAAS0c3ZTRQAAADgAAAGyemhDTgAAAB4AAATWamFKUAAAACYAAAT0ZWxH
+UgAAACoAAAUacHRQTwAAAFIAAAVEbmxOTAAAAEAAAAWWZXNFUwAAAEwAAAXWdGhUSAAAADIAAAYidHJU
+UgAAACQAAAZUZmlGSQAAAEYAAAZ4aHJIUgAAAD4AAAa+cGxQTAAAAEoAAAb8cnVSVQAAADoAAAdGZW5V
+UwAAADwAAAeAYXJFRwAAACwAAAe8AFYBYQBlAG8AYgBlAGMAbgDhACAAcwBpAHYA4QAgAGcAYQBtAGEA
+IAAyACwAMgBHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QAgADIALAAyACAAZwBhAG0AbQBhAHAAcgBvAGYA
+aQBsAEcAYQBtAG0AYQAgAGQAZQAgAGcAcgBpAHMAbwBzACAAZwBlAG4A6AByAGkAYwBhACAAMgAuADIA
+Qx6lAHUAIABoAOwAbgBoACAATQDgAHUAIAB4AOEAbQAgAEMAaAB1AG4AZwAgAEcAYQBtAG0AYQAgADIA
+LgAyAFAAZQByAGYAaQBsACAARwBlAG4A6QByAGkAYwBvACAAZABhACAARwBhAG0AYQAgAGQAZQAgAEMA
+aQBuAHoAYQBzACAAMgAsADIEFwQwBDMEMAQ7BEwEPQQwACAARwByAGEAeQAtBDMEMAQ8BDAAIAAyAC4A
+MgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAAZwByAGkAcwAgAGcAYQBtAG0AYQAgADIA
+LAAyAMEAbAB0AGEAbADhAG4AbwBzACAAcwB6APwAcgBrAGUAIABnAGEAbQBtAGEAIAAyAC4AMpAadShw
+cJaOUUlepgAgADIALgAyACCCcl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QAgAGcAYQBtAG0A
+YQAgADIALAAyAC0AcAByAG8AZgBpAGwATwBiAGUAYwBuAOEAIAFhAGUAZADhACAAZwBhAG0AYQAgADIA
+LgAyBdIF0AXeBdQAIAXQBeQF1QXoACAF2wXcBdwF2QAgADIALgAyAFAAcgBvAGYAaQBsAG8AIABnAHIA
+aQBnAGkAbwAgAGcAZQBuAGUAcgBpAGMAbwAgAGQAZQBsAGwAYQAgAGcAYQBtAG0AYQAgADIALAAyAEcA
+YQBtAGEAIABnAHIAaQAgAGcAZQBuAGUAcgBpAGMBAwAgADIALAAyAEEAbABsAGcAZQBtAGUAaQBuAGUA
+cwAgAEcAcgBhAHUAcwB0AHUAZgBlAG4ALQBQAHIAbwBmAGkAbAAgAEcAYQBtAG0AYQAgADIALAAyx3y8
+GAAg1ozAyQAgrBC5yAAgADIALgAyACDVBLhc0wzHfGZukBpwcF6mfPtlcAAgADIALgAyACBjz4/wZYdO
+9k4AgiwwsDDsMKQwrDDzMN4AIAAyAC4AMgAgMNcw7TDVMKEwpDDrA5MDtQO9A7kDugPMACADkwO6A8ED
+uQAgA5MDrAO8A7wDsQAgADIALgAyAFAAZQByAGYAaQBsACAAZwBlAG4A6QByAGkAYwBvACAAZABlACAA
+YwBpAG4AegBlAG4AdABvAHMAIABkAGEAIABHAGEAbQBtAGEAIAAyACwAMgBBAGwAZwBlAG0AZQBlAG4A
+IABnAHIAaQBqAHMAIABnAGEAbQBtAGEAIAAyACwAMgAtAHAAcgBvAGYAaQBlAGwAUABlAHIAZgBpAGwA
+IABnAGUAbgDpAHIAaQBjAG8AIABkAGUAIABnAGEAbQBtAGEAIABkAGUAIABnAHIAaQBzAGUAcwAgADIA
+LAAyDiMOMQ4HDioONQ5BDgEOIQ4hDjIOQA4BDiMOIg5MDhcOMQ5IDicORA4bACAAMgAuADIARwBlAG4A
+ZQBsACAARwByAGkAIABHAGEAbQBhACAAMgAsADIAWQBsAGUAaQBuAGUAbgAgAGgAYQByAG0AYQBhAG4A
+IABnAGEAbQBtAGEAIAAyACwAMgAgAC0AcAByAG8AZgBpAGkAbABpAEcAZQBuAGUAcgBpAQ0AawBpACAA
+RwByAGEAeQAgAEcAYQBtAG0AYQAgADIALgAyACAAcAByAG8AZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwA
+bgB5ACAAcAByAG8AZgBpAGwAIABzAHoAYQByAG8BWwBjAGkAIABnAGEAbQBtAGEAIAAyACwAMgQeBDEE
+SQQwBE8AIARBBDUEQAQwBE8AIAQzBDAEPAQ8BDAAIAAyACwAMgAtBD8EQAQ+BEQEOAQ7BEwARwBlAG4A
+ZQByAGkAYwAgAEcAcgBhAHkAIABHAGEAbQBtAGEAIAAyAC4AMgAgAFAAcgBvAGYAaQBsAGUGOgYnBkUG
+JwAgADIALgAyACAGRAZIBkYAIAYxBkUGJwYvBkoAIAY5BicGRXRleHQAAAAAQ29weXJpZ2h0IEFwcGxl
+IEluYy4sIDIwMTIAAFhZWiAAAAAAAADzUQABAAAAARbMY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4A
+IwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCfAKQAqQCuALIA
+twC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMBGQEfASUBKwEyATgBPgFFAUwBUgFZAWAB
+ZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJAdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQC
+XQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLgAusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YD
+ogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4EjASaBKgEtgTEBNME4QTwBP4FDQUcBSsF
+OgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgGWQZqBnsGjAadBq8GwAbRBuMG9QcHBxkH
+Kwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJ
+eQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqYCq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIM
+KgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUP
+QQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMS
+wxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRqFIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8W
+shbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwb
+FBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR+UH78f
+6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yInIlUigiKvIt0jCiM4I2YjlCPCI/AkHyRNJHwkqyTaJQkl
+OCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneierJ9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8r
+Ais2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIx
+SjGCMbox8jIqMmMymzLUMw0zRjN/M7gz8TQrNGU0njTYNRM1TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4
+FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/
+YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBH
+NUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrESwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lP
+k0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3V0RXklfgWC9Y
+fVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyGXNZdJ114XcleGl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh
+9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr
+/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CGcOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52
+m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuB
+zYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gEiGmIzokziZmJ/opkisqLMIuWi/yMY4zKjTGN
+mI3/jmaOzo82j56QBpBukNaRP5GokhGSepLjk02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ
+/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+Ln/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum
+/adup+CoUqjEqTepqaocqo+rAqt1q+msXKzQrUStuK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0
+nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C
+28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzR
+vtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3h
+ROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXx
+cvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t//+ADNIkJUNE
+XU5TTXV0YWJsZURhdGGjQ0UoVk5TRGF0YdIkJUdIXE5TQ29sb3JTcGFjZaJJKFxOU0NvbG9yU3BhY2XS
+JCVLTFdOU0NvbG9yokso0iQlTk9XTlNJbWFnZaJOKF8QD05TS2V5ZWRBcmNoaXZlctFSU1Ryb290gAEA
+CAARABoAIwAtADIANwBKAFAAWQBgAG0AdAB8AH4AgwCFAIcAjACXAJkAmwCdAKIApQCnAKkAqwCtALQA
+vADIAMoAzADOAUQBSQFUAV0BYwFmAW8BdAF8AX8BigGSAZ8BrAHBAcYBygHMAc4B0AHZAd4B5AHsAe4B
+8AHyAfQB+QIBE20TbxN0E4IThhONE5ITnxOiE68TtBO8E78TxBPME88T4RPkE+kAAAAAAAACAQAAAAAA
+AABUAAAAAAAAAAAAAAAAAAAT6w
+</mutableData>
+        </image>
         <image name="imageView:W6K-mh-HhB:image" width="16" height="16">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGUFFYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEAcI
+ERYbHCIjKSw2PkJGSk1VJG51bGzUCQoLDA0ODxBWJGNsYXNzXE5TSW1hZ2VGbGFnc1ZOU1JlcHNXTlND
+b2xvcoAPEgTAAACAAoAJ0hIJExVaTlMub2JqZWN0c6EUgAOACNISCRcVohgZgASABYAIEAXTHQkeHyAh
+V05TLmJhc2VbTlMucmVsYXRpdmWAAIAHgAZfEHNmaWxlOi8vL0FwcGxpY2F0aW9ucy9YY29kZS5hcHAv
+Q29udGVudHMvUGx1Z0lucy9JREVJbnRlcmZhY2VCdWlsZGVyS2l0LmZyYW1ld29yay9SZXNvdXJjZXMv
+SUJNaXNzaW5nSW1hZ2VHbHlwaC50aWZm0iQlJidaJGNsYXNzbmFtZVgkY2xhc3Nlc1VOU1VSTKImKFhO
+U09iamVjdNIkJSorV05TQXJyYXmiKijVLS4vMAkxMjM0NVdOU1doaXRlXE5TQ29tcG9uZW50c1xOU0Nv
+bG9yU3BhY2VfEBJOU0N1c3RvbUNvbG9yU3BhY2VEMCAwAEMwIDAQA4AKgA7UNzg5CTo7PD1UTlNJRFVO
+U0lDQ1dOU01vZGVsEAmACxAAgA3SPwlAQVdOUy5kYXRhTxERaAAAEWhhcHBsAgAAAG1udHJHUkFZWFla
+IAfcAAgAFwAPAC4AD2Fjc3BBUFBMAAAAAG5vbmUAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBw
+bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWRlc2MAAADAAAAA
+eWRzY20AAAE8AAAH6GNwcnQAAAkkAAAAI3d0cHQAAAlIAAAAFGtUUkMAAAlcAAAIDGRlc2MAAAAAAAAA
+H0dlbmVyaWMgR3JheSBHYW1tYSAyLjIgUHJvZmlsZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAA
+AAAAAB8AAAAMc2tTSwAAAC4AAAGEZGFESwAAADgAAAGyY2FFUwAAADgAAAHqdmlWTgAAAEAAAAIicHRC
+UgAAAEoAAAJidWtVQQAAACwAAAKsZnJGVQAAAD4AAALYaHVIVQAAADQAAAMWemhUVwAAAB4AAANKbmJO
+TwAAADoAAANoY3NDWgAAACgAAAOiaGVJTAAAACQAAAPKaXRJVAAAAE4AAAPucm9STwAAACoAAAQ8ZGVE
+RQAAAE4AAARma29LUgAAACIAAAS0c3ZTRQAAADgAAAGyemhDTgAAAB4AAATWamFKUAAAACYAAAT0ZWxH
+UgAAACoAAAUacHRQTwAAAFIAAAVEbmxOTAAAAEAAAAWWZXNFUwAAAEwAAAXWdGhUSAAAADIAAAYidHJU
+UgAAACQAAAZUZmlGSQAAAEYAAAZ4aHJIUgAAAD4AAAa+cGxQTAAAAEoAAAb8cnVSVQAAADoAAAdGZW5V
+UwAAADwAAAeAYXJFRwAAACwAAAe8AFYBYQBlAG8AYgBlAGMAbgDhACAAcwBpAHYA4QAgAGcAYQBtAGEA
+IAAyACwAMgBHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QAgADIALAAyACAAZwBhAG0AbQBhAHAAcgBvAGYA
+aQBsAEcAYQBtAG0AYQAgAGQAZQAgAGcAcgBpAHMAbwBzACAAZwBlAG4A6AByAGkAYwBhACAAMgAuADIA
+Qx6lAHUAIABoAOwAbgBoACAATQDgAHUAIAB4AOEAbQAgAEMAaAB1AG4AZwAgAEcAYQBtAG0AYQAgADIA
+LgAyAFAAZQByAGYAaQBsACAARwBlAG4A6QByAGkAYwBvACAAZABhACAARwBhAG0AYQAgAGQAZQAgAEMA
+aQBuAHoAYQBzACAAMgAsADIEFwQwBDMEMAQ7BEwEPQQwACAARwByAGEAeQAtBDMEMAQ8BDAAIAAyAC4A
+MgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAAZwByAGkAcwAgAGcAYQBtAG0AYQAgADIA
+LAAyAMEAbAB0AGEAbADhAG4AbwBzACAAcwB6APwAcgBrAGUAIABnAGEAbQBtAGEAIAAyAC4AMpAadShw
+cJaOUUlepgAgADIALgAyACCCcl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QAgAGcAYQBtAG0A
+YQAgADIALAAyAC0AcAByAG8AZgBpAGwATwBiAGUAYwBuAOEAIAFhAGUAZADhACAAZwBhAG0AYQAgADIA
+LgAyBdIF0AXeBdQAIAXQBeQF1QXoACAF2wXcBdwF2QAgADIALgAyAFAAcgBvAGYAaQBsAG8AIABnAHIA
+aQBnAGkAbwAgAGcAZQBuAGUAcgBpAGMAbwAgAGQAZQBsAGwAYQAgAGcAYQBtAG0AYQAgADIALAAyAEcA
+YQBtAGEAIABnAHIAaQAgAGcAZQBuAGUAcgBpAGMBAwAgADIALAAyAEEAbABsAGcAZQBtAGUAaQBuAGUA
+cwAgAEcAcgBhAHUAcwB0AHUAZgBlAG4ALQBQAHIAbwBmAGkAbAAgAEcAYQBtAG0AYQAgADIALAAyx3y8
+GAAg1ozAyQAgrBC5yAAgADIALgAyACDVBLhc0wzHfGZukBpwcF6mfPtlcAAgADIALgAyACBjz4/wZYdO
+9k4AgiwwsDDsMKQwrDDzMN4AIAAyAC4AMgAgMNcw7TDVMKEwpDDrA5MDtQO9A7kDugPMACADkwO6A8ED
+uQAgA5MDrAO8A7wDsQAgADIALgAyAFAAZQByAGYAaQBsACAAZwBlAG4A6QByAGkAYwBvACAAZABlACAA
+YwBpAG4AegBlAG4AdABvAHMAIABkAGEAIABHAGEAbQBtAGEAIAAyACwAMgBBAGwAZwBlAG0AZQBlAG4A
+IABnAHIAaQBqAHMAIABnAGEAbQBtAGEAIAAyACwAMgAtAHAAcgBvAGYAaQBlAGwAUABlAHIAZgBpAGwA
+IABnAGUAbgDpAHIAaQBjAG8AIABkAGUAIABnAGEAbQBtAGEAIABkAGUAIABnAHIAaQBzAGUAcwAgADIA
+LAAyDiMOMQ4HDioONQ5BDgEOIQ4hDjIOQA4BDiMOIg5MDhcOMQ5IDicORA4bACAAMgAuADIARwBlAG4A
+ZQBsACAARwByAGkAIABHAGEAbQBhACAAMgAsADIAWQBsAGUAaQBuAGUAbgAgAGgAYQByAG0AYQBhAG4A
+IABnAGEAbQBtAGEAIAAyACwAMgAgAC0AcAByAG8AZgBpAGkAbABpAEcAZQBuAGUAcgBpAQ0AawBpACAA
+RwByAGEAeQAgAEcAYQBtAG0AYQAgADIALgAyACAAcAByAG8AZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwA
+bgB5ACAAcAByAG8AZgBpAGwAIABzAHoAYQByAG8BWwBjAGkAIABnAGEAbQBtAGEAIAAyACwAMgQeBDEE
+SQQwBE8AIARBBDUEQAQwBE8AIAQzBDAEPAQ8BDAAIAAyACwAMgAtBD8EQAQ+BEQEOAQ7BEwARwBlAG4A
+ZQByAGkAYwAgAEcAcgBhAHkAIABHAGEAbQBtAGEAIAAyAC4AMgAgAFAAcgBvAGYAaQBsAGUGOgYnBkUG
+JwAgADIALgAyACAGRAZIBkYAIAYxBkUGJwYvBkoAIAY5BicGRXRleHQAAAAAQ29weXJpZ2h0IEFwcGxl
+IEluYy4sIDIwMTIAAFhZWiAAAAAAAADzUQABAAAAARbMY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4A
+IwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCfAKQAqQCuALIA
+twC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMBGQEfASUBKwEyATgBPgFFAUwBUgFZAWAB
+ZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJAdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQC
+XQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLgAusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YD
+ogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4EjASaBKgEtgTEBNME4QTwBP4FDQUcBSsF
+OgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgGWQZqBnsGjAadBq8GwAbRBuMG9QcHBxkH
+Kwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJ
+eQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqYCq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIM
+KgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUP
+QQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMS
+wxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRqFIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8W
+shbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwb
+FBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR+UH78f
+6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yInIlUigiKvIt0jCiM4I2YjlCPCI/AkHyRNJHwkqyTaJQkl
+OCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneierJ9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8r
+Ais2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIx
+SjGCMbox8jIqMmMymzLUMw0zRjN/M7gz8TQrNGU0njTYNRM1TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4
+FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/
+YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBH
+NUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrESwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lP
+k0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3V0RXklfgWC9Y
+fVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyGXNZdJ114XcleGl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh
+9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr
+/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CGcOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52
+m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuB
+zYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gEiGmIzokziZmJ/opkisqLMIuWi/yMY4zKjTGN
+mI3/jmaOzo82j56QBpBukNaRP5GokhGSepLjk02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ
+/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+Ln/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum
+/adup+CoUqjEqTepqaocqo+rAqt1q+msXKzQrUStuK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0
+nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C
+28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzR
+vtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3h
+ROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXx
+cvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t//+ADNIkJUNE
+XU5TTXV0YWJsZURhdGGjQ0UoVk5TRGF0YdIkJUdIXE5TQ29sb3JTcGFjZaJJKFxOU0NvbG9yU3BhY2XS
+JCVLTFdOU0NvbG9yokso0iQlTk9XTlNJbWFnZaJOKF8QD05TS2V5ZWRBcmNoaXZlctFSU1Ryb290gAEA
+CAARABoAIwAtADIANwBKAFAAWQBgAG0AdAB8AH4AgwCFAIcAjACXAJkAmwCdAKIApQCnAKkAqwCtALQA
+vADIAMoAzADOAUQBSQFUAV0BYwFmAW8BdAF8AX8BigGSAZ8BrAHBAcYBygHMAc4B0AHZAd4B5AHsAe4B
+8AHyAfQB+QIBE20TbxN0E4IThhONE5ITnxOiE68TtBO8E78TxBPME88T4RPkE+kAAAAAAAACAQAAAAAA
+AABUAAAAAAAAAAAAAAAAAAAT6w
+</mutableData>
+        </image>
+        <image name="imageView:bsE-6q-MvT:image" width="16" height="16">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGUFFYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEAcI
 ERYbHCIjKSw2PkJGSk1VJG51bGzUCQoLDA0ODxBWJGNsYXNzXE5TSW1hZ2VGbGFnc1ZOU1JlcHNXTlND
