@@ -51,6 +51,9 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
     var refreshTimer: Timer!
     @IBOutlet weak var tableViewBottomConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var SearchButton: UIButton!
+    
+    @IBOutlet weak var LeaveButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         setProgressBar()
@@ -62,9 +65,9 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         playButton.isHidden = !isOwner
         nextButton.isHidden = !isOwner
         rewindButton.isHidden = !isOwner
-        progressBar.isHidden = !isOwner
-        timerLabel.isHidden = !isOwner
-        startTimer.isHidden = !isOwner
+       // progressBar.isHidden = !isOwner
+        //timerLabel.isHidden = !isOwner
+        //startTimer.isHidden = !isOwner
         
         if isOwner {
             // Initialize Spotify player
@@ -82,15 +85,21 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         }
         
         // Initialize the table view
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.separatorColor = UIColor.clear
+        //tableView.dataSource = self
+        //tableView.delegate = self
+        //ableView.separatorColor = UIColor.clear
         playButton.isSelected = player.playbackState != nil && player.playbackState!.isPlaying
-        tableView.allowsSelection = true
-        tableView.allowsMultipleSelectionDuringEditing = true
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 66
+        //tableView.allowsSelection = true
+        //tableView.allowsMultipleSelectionDuringEditing = true
+        //tableView.rowHeight = UITableViewAutomaticDimension
+        //tableView.estimatedRowHeight = 66
         view.layoutMargins.left = 32
+        
+        SearchButton.layer.cornerRadius = SearchButton.frame.width * 0.10
+           SearchButton.layer.masksToBounds = true
+        
+        LeaveButton.layer.cornerRadius = LeaveButton.frame.width * 0.10
+        LeaveButton.layer.masksToBounds = true
         
         // Animate instructions label
         instructionsLabel.layer.cornerRadius = 5
@@ -98,7 +107,7 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         
         // Refresh control
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
-        tableView.insertSubview(refreshControl, at: 0)
+        //tableView.insertSubview(refreshControl, at: 0)
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
             print("AVAudioSession Category Playback OK")
@@ -140,11 +149,11 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         // fades in
         if queue.ownerId == user.id {
             UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseIn, animations: {
-                self.timerLabel.alpha = 1.0
-                self.startTimer.alpha = 1.0
+                //self.timerLabel.alpha = 1.0
+                //self.startTimer.alpha = 1.0
             }, completion: nil)
-            startTimer.isHidden = false
-            timerLabel.isHidden = false
+            //startTimer.isHidden = false
+            //timerLabel.isHidden = false
         }
     }
     
@@ -165,17 +174,19 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         let view = UIView()
         
         // Set up Add to Playlist Button
-        let button = UIButton()
-        button.setTitle("Search Songs", for: .normal)
-        button.titleLabel?.font = UIFont(name: "HKGrotesk-SemiBold", size: 20)
+        //let button = UIButton()
+        //button.setTitle("Search Songs", for: .normal)
+         SearchButton.titleLabel?.font = UIFont(name: "HKGrotesk-SemiBold", size: 20)
         let screenWidth = self.view.frame.size.width
-        button.frame = CGRect(x: (screenWidth - 219)/2, y: 10, width: 219, height: 45)
-        button.backgroundColor = UIColor(red:0.56, green:0.07, blue:1.00, alpha:1.0)
-        button.layer.cornerRadius = button.frame.width * 0.10
-        button.layer.masksToBounds = true
-        button.addTarget(self, action: #selector(self.buttonAction(sender:)),
+        SearchButton.layer.masksToBounds = true
+        
+        SearchButton.frame = CGRect(x: (screenWidth - 219)/2, y: 10, width: 219, height: 45)
+        //button.backgroundColor = UIColor(red:0.56, green:0.07, blue:1.00, alpha:1.0)
+        SearchButton.layer.cornerRadius =  SearchButton.frame.width * 0.10
+        SearchButton.layer.masksToBounds = true
+         SearchButton.addTarget(self, action: #selector(self.buttonAction(sender:)),
                          for: UIControlEvents.touchUpInside)
-        view.addSubview(button)
+        view.addSubview(SearchButton)
         return view
     }
     
@@ -223,7 +234,7 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         instructionsLabel.isHidden = hasTracks
         if !isSwiping {
             queue.updateFromParse(callback: {
-                self.tableView.reloadData()
+                //self.tableView.reloadData()
                 self.loadAlbumDisplays()
             })
         }
@@ -260,7 +271,7 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
             
             currentSongImageView.af_setImage(withURL: url)
             bg.af_setImage(withURL: url)
-            secondbg.af_setImage(withURL: url)
+            //secondbg.af_setImage(withURL: url)
         }
         // Load previous track
         if playIndex > 0 {
@@ -302,7 +313,7 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
                 self.fullTrackDuration = track.durationMS! / 1000
                 indexProgressBar = 0
                 player.playSpotifyURI(tracks[queue.playIndex].uri, startingWith: 0, startingWithPosition: 0, callback: printError(_:))
-                tableView.reloadData()
+                //tableView.reloadData()
                 fadeIn()
                 loadAlbumDisplays()
                 
@@ -403,8 +414,8 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         count = count + 1
         if count >= 4 {
             UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseOut, animations: {
-                self.timerLabel.alpha = 0.0
-                self.startTimer.alpha = 0.0
+               // self.timerLabel.alpha = 0.0
+               // self.startTimer.alpha = 0.0
             }, completion: {
                 finished in
             })
@@ -441,14 +452,14 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
             
             // update the display
             // use poseDuration - 1 so that you display 20 steps of the the progress bar, from 0...19
-            progressBar.progress = Float(indexProgressBar)/Float(fullTrackDuration-1)
+            //progressBar.progress = Float(indexProgressBar)/Float(fullTrackDuration-1)
             
             // increment the counter
             indexProgressBar += 1
         }
         
-        let (_,m, s) = secondsToHoursMinutesSeconds (seconds: trackDuration)
-        let (_,min, sec) = secondsToHoursMinutesSeconds (seconds: Int(indexProgressBar))
+        //let (_,m, s) = secondsToHoursMinutesSeconds (seconds: trackDuration)
+        /*let (_,min, sec) = secondsToHoursMinutesSeconds (seconds: Int(indexProgressBar))
         if s < 10  {
             timerLabel.text = "0\(m):0\(s)" // updates the label            startTimer.text = "0\(min):0\(sec)"
         } else {
@@ -460,7 +471,9 @@ class CreateHomeViewController: UIViewController, SPTAudioStreamingDelegate, SPT
         } else {
             startTimer.text = "0\(min):\(sec)"
         }
+ */
     }
+ 
     
     func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
         return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
