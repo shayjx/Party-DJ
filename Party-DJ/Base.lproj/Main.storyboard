@@ -398,133 +398,6 @@
             </objects>
             <point key="canvasLocation" x="-602.39999999999998" y="-1524.2878560719641"/>
         </scene>
-        <!--HomePlayingController-->
-        <scene sceneID="acb-Mo-EdP">
-            <objects>
-                <viewController title="HomePlayingController" id="D4A-Qd-p1f" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="h8c-xo-twW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x6G-2U-E6m">
-                                <rect key="frame" x="0.0" y="-12" width="375" height="679"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Z2-Nt-zdM" userLabel="previousSongImage">
-                                <rect key="frame" x="0.0" y="84" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="KZb-0C-ZzI"/>
-                                    <constraint firstAttribute="width" constant="150" id="pXl-wK-KKb"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8y-JK-WGx" userLabel="nextSongImage">
-                                <rect key="frame" x="225" y="84" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="f2q-uo-uym"/>
-                                    <constraint firstAttribute="width" constant="150" id="sDy-PP-fjg"/>
-                                </constraints>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="48 [Converted].png" translatesAutoresizingMaskIntoConstraints="NO" id="V7M-BF-tYn" userLabel="currentSongImage">
-                                <rect key="frame" x="80" y="66" width="214" height="211"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="VSw-FO-K2k"/>
-                                    <constraint firstAttribute="height" constant="211" id="gF5-FR-ALS"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your playlist is currently empty. Start by adding songs!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-D1-Xy5">
-                                <rect key="frame" x="87" y="357" width="200" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="QUK-b8-6lJ"/>
-                                    <constraint firstAttribute="height" constant="41" id="dm8-3U-Nev"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uks-0V-baP" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                <rect key="frame" x="146" y="303" width="83" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="HKGrotesk-SemiBold" family="HK Grotesk" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grq-f3-CgK">
-                                <rect key="frame" x="163" y="476" width="48" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="48" id="aNV-K3-r1t"/>
-                                    <constraint firstAttribute="height" constant="48" id="uKy-gK-RXM"/>
-                                </constraints>
-                                <state key="normal" image="PlayButton.png"/>
-                                <state key="selected" image="Pause Button.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0Y-eB-UUk">
-                                <rect key="frame" x="238" y="484" width="32" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="Cs9-Z8-CLy"/>
-                                    <constraint firstAttribute="height" constant="32" id="cJu-2d-HBb"/>
-                                </constraints>
-                                <state key="normal" image="nextButton.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-XX-aI8">
-                                <rect key="frame" x="106" y="484" width="32" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="1rg-HZ-HDM"/>
-                                    <constraint firstAttribute="width" constant="32" id="zhR-Do-62g"/>
-                                </constraints>
-                                <state key="normal" image="prevButton.png"/>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ixe-bb-OJB">
-                                <rect key="frame" x="12" y="332" width="351" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="progressTintColor" red="0.055858602719999997" green="0.068146858810000002" blue="0.01262273821" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </progressView>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVe-O6-5R5" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                <rect key="frame" x="171" y="342" width="40" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Grq-f3-CgK" firstAttribute="centerX" secondItem="h8c-xo-twW" secondAttribute="centerX" id="8xe-Mk-IZD"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="zKj-nc-bOV"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xGn-AN-JCx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1198" y="-3146"/>
-        </scene>
         <!--YourPlaylistController-->
         <scene sceneID="lEd-EQ-s7h">
             <objects>
@@ -896,7 +769,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2008.8" y="-4068.2158920539732"/>
+            <point key="canvasLocation" x="3103" y="-2635"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="JOp-kM-udQ">
@@ -1235,7 +1108,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4640.5" y="-2732.5"/>
+            <point key="canvasLocation" x="5828" y="-2022"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Cz-YX-Zxz">
@@ -1253,7 +1126,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mT-63-LgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="-3866"/>
+            <point key="canvasLocation" x="618" y="-1524"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QgJ-dV-YL0">
@@ -1271,7 +1144,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvw-Ia-hFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3734" y="-3300"/>
+            <point key="canvasLocation" x="4524" y="-2022"/>
         </scene>
     </scenes>
     <resources>
